@@ -1,0 +1,328 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"reset_progre",
+				"reset_progress_counter"
+			],
+			[
+				"Scene",
+				"SceneManager"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"c#",
+				"Set Syntax: C#"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Vitalya/Desktop/Untitled Tangram Game/Untitled Tangram Game/Assets/Code/Clickable.cs",
+		"/C/Users/Vitalya/Desktop/Untitled Tangram Game/Untitled Tangram Game/Assets/Code/Shape.cs",
+		"/C/Users/Vitalya/Desktop/Untitled Tangram Game/Untitled Tangram Game/Assets/Scenes/Main.unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Managers/LevelManager.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Controllers/PiggyController.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Utils/SoundUtils.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Managers/DebugSceneManager.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/Pipe.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Polly/Gameplay/Polly (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Are You Experienced/Gameplay/Are You Experienced (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Missed Connection/Gameplay/Missed Connection (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/ActionManager.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/Cannon.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Handlers/MouseHandler.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Managers/GameManager.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Live Outside/Gameplay/Live Outside (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/ChangeDirection.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/etc/Explode.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/etc/BasicTranslation.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/etc/Roll.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/etc/BasicRotation.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Characters/PiggyController.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/Bomb.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/FlipX.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/FlipY.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/Fly.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/Goal.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/Roll.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Bold As Love/Gameplay/Bold As Love (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/Actions/Highlight.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Sam Town/Gameplay/Sam Town (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Generic Level/Gameplay/Level Name (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/And The God Made Love/Gameplay/Level Name (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/And The God Made Love/After/Level Name (After).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Fresh Strawberries/Gameplay/Level Name (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/When You Were Young/Gameplay/When You Were Young (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Are You Experienced/After/Are You Experienced (After).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Bold As Love/After/Bold As Love (After).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Break In The Wall/After/Break In The Wall (After).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Generic Level/After/Level Name (After).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/When You Were Young/After/When You Were Young (After).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Are You Experienced/Intro/Are You Experienced (Intro).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Bold As Love/Intro/Bold As Love (Intro).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Break In The Wall/Intro/Break In The Wall (Intro).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Generic Level/Intro/Level Name (Intro).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/When You Were Young/Intro/When You Were Young (Intro).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Fresh Strawberries/Intro/Fresh Strawberries (Intro).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Levels/Break In The Wall/Gameplay/Break In The Wall (Gameplay).unity",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Old Assets ~/Code/Controllers/Handlers/InputHandler.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Old Assets ~/Code/Managers/GameManager.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/Actions/Rotation.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/GroundManager.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/PiggyController.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/SetupPuzzleGame.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Old Assets ~/Code/Controllers/Effects.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/BasicRotation.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/Rotationable.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/LevelManager.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Editor~/MenuItems.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Editor/Mono/RagdollBuilder.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/New Assets/Code/etc/Rotationable.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Old Assets ~/Code/Controllers/LevelController.cs",
+		"/C/Users/Vitalya/Downloads/unity-game-dokyusei2-master/Assets/Sources/TileMapFg.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Controllers/Handlers/MouseHandler.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Controllers/Handlers/HandlerHelper.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Controllers/ActionController.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Controllers/CountdownController.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/Actions/ChangeDirection.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Editor/Mono/Camera/SceneStateHash.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Editor/Mono/Inspector/MonoScriptInspector.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Editor/Mono/Inspector/TransformUtils.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Library/PackageCache/com.unity.textmeshpro@1.3.0/Scripts/Editor/TMP_BaseShaderGUI.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Editor/Mono/Inspector/UnityEventDrawer.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Library/PackageCache/com.unity.textmeshpro@1.3.0/Scripts/Editor/TMP_BaseEditorPanel.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/Roll.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/SnapController.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor/Collab/CollabHistoryWindow.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Library/PackageCache/com.unity.textmeshpro@1.3.0/Scripts/Runtime/TextContainer.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Controllers/PersonageController.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Editor/Mono/Animation/AnimationWindow/AnimationWindow.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Modules/IMGUI/DrawStates.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/Snap.cs",
+		"/C/Users/Vitalya/Desktop/Junk/Junk/Assets/Code/Translation.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Utils/Translation.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/TouchPad.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/AI.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Editor/Mono/2D/Interface/IEvent.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/State Machines/Hero/HeroIdleState.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/State Machines/Hero/HeroFlyState.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Board.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Drive.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/State Machines/Hero/HeroWinState.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Managers/ActionManager.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/MENU.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/GameplayController.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/GameManager.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Controllers/Handlers/InputHandler.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/PandaBehaviour.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Attack.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Booster.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/DynamicShadowSettings.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/BirdScript.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/AdsController.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/ExplosionFireAndDebris.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Controllers/Timer.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/BuiltinDebugViewsComponent.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Controllers/LevelController.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/FOVKick.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Door.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Bouncy.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/State Machines/Hero/HeroFallingState.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/UnityCsReference/Editor/Mono/Handles.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Run-for-prize/Run for prize/Assets/Actions/JumpPackAction.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Run-for-prize/Run for prize/Assets/H/HFlyingState.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/Run-for-prize/Run for prize/Assets/H/HIdleState.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/Managers/InputManager.cs",
+		"/C/Users/Vitalya/Desktop/Unity Projects/iTween.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/State Machines/HeroIdleState.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/State Machines/HeroFlyState.cs",
+		"/C/Users/Vitalya/Desktop/Run-for-prize/Run for prize/Assets/Code/State Machines/HeroCrashState.cs"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 262.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Untitled Tangram Game.sln",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"clicka",
+				"Assets\\Code\\Clickable.cs"
+			],
+			[
+				"Click",
+				"Assets\\Code\\Clickable.cs"
+			],
+			[
+				"Sha",
+				"Assets\\Code\\Shape.cs"
+			],
+			[
+				"LevelMana",
+				"Run for prize\\Assets\\New Assets\\Code\\Managers\\LevelManager.cs"
+			],
+			[
+				"Pig",
+				"Run for prize\\Assets\\New Assets\\Code\\Controllers\\PiggyController.cs"
+			],
+			[
+				"Pigg",
+				"Run for prize\\Assets\\New Assets\\Code\\Controllers\\PiggyController.cs"
+			],
+			[
+				"Util",
+				"Run for prize\\Assets\\New Assets\\Code\\Utils\\SoundUtils.cs"
+			],
+			[
+				"SoundUt",
+				"Run for prize\\Assets\\New Assets\\Code\\Utils\\SoundUtils.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 133.6,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 221.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

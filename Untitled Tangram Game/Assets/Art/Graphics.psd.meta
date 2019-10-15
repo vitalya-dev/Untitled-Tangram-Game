@@ -13,6 +13,7 @@ TextureImporter:
     21300016: Triangle J
     21300018: Graphics_2
     21300020: Triangle H
+    21300022: Shape Box
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -310,6 +311,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1530339216c22e042a63ccd4507b971f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shape Box
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 141
+        width: 263
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218bf731c43d414468fb534529fdc950
       vertices: []
       indices: 
       edges: []
