@@ -21,7 +21,6 @@ public class Clickable : MonoBehaviour {
     }
 
     public virtual void click_it() {
-        Debug.Log("Click it: " + gameObject.name);
         click_callback.Invoke(this);
     }
 }
