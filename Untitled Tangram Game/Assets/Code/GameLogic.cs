@@ -9,30 +9,28 @@ using UnityEditor;
 public class GameLogic : MonoBehaviour {
     public GUIStyle gizmo_style = new GUIStyle();
 
-    private enum LogicFSM {
-        GOT_NOTHING,
-        GOT_SHAPE
-    }
-    private LogicFSM state = LogicFSM.GOT_NOTHING;
-
+    private GameObject shape = null;
     public void clicked(Clickable clickable) {
-        switch (state) {
-            case LogicFSM.GOT_NOTHING:
-                if (clickable.tag == "Shape")
-                    state = LogicFSM.GOT_SHAPE;
-                break;
-            case LogicFSM.GOT_SHAPE:
-                if (clickable.tag == "Field Piece") {
-                    // Need move
-                    state = LogicFSM.GOT_NOTHING;
-                }
-                break;
+        if (clickable.tag == "Shape") {
+            shape = clickable.gameObject;
+        } else if (clickable.tag == "Field Piece" && shape != null) {
+            Vector3 new_position = shape.transform.position;
+            new_position.x = clickable.gameObject.transform.position.x;
+            new_position.y = clickable.gameObject.transform.position.y;
+            /* ================================================================= */
+            shape.transform.position = new_position;
+            /* ================================================================= */
+            shape = null;
         }
     }
 
     void OnDrawGizmos() {
 #if UNITY_EDITOR
-        Handles.Label(transform.position + new Vector3(0.0f, 0.0f, 0), "GameLogic: " + state.ToString(), gizmo_style);
+        Handles.Label(
+            transform.position,
+            "GameLogic: " + (shape ? shape.name : "None of shape selected"),
+            gizmo_style
+        );
 #endif
     }
 
