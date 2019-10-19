@@ -21,8 +21,12 @@ public class GameLogic : MonoBehaviour {
             }
             /* ================================================================= */
             Vector2 offset = mouse_position - (Vector2)clickable.transform.position;
-            offset.x = Mathf.Sign(offset.x);
-            offset.y = Mathf.Sign(offset.y);
+            if (offset.magnitude < 0.2)
+                return;
+            else {
+                offset.x = Mathf.Sign(offset.x);
+                offset.y = Mathf.Sign(offset.y);
+            }
             /* ================================================================= */
             Vector3 new_position = new Vector3();
             new_position.x = clickable.gameObject.transform.position.x + (size / 2) * offset.x;
