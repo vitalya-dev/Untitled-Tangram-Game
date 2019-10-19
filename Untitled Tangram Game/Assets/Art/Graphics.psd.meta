@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: da2e5eb1c42ca904cb9605fff78bc17c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Square
+    21300000: Game FIeld
     21300002: Game Field
     21300004: Triangle A
     21300006: Triangle B
@@ -15,6 +15,7 @@ TextureImporter:
     21300020: Triangle H
     21300022: Shape Box
     21300024: Pivot
+    21300026: Square
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -97,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Square
+      name: Game FIeld
       rect:
         serializedVersion: 2
         x: 192
@@ -325,13 +326,33 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 8424b2e5a6697cc4e96df2040fd5502c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21828e83a62129b4a905d17ba65cd50f
       vertices: []
       indices: 
       edges: []
