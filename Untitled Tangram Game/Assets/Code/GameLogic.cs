@@ -31,6 +31,8 @@ public class GameLogic : MonoBehaviour {
             /* ================================================================= */
             shape.transform.position = new_position;
             /* ================================================================= */
+            shape.GetComponent<Collider2D>().enabled = false;
+            /* ================================================================= */
             shape = null;
         }
     }
