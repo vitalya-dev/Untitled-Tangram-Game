@@ -9,11 +9,12 @@ using UnityEditor;
 public class GameLogic : MonoBehaviour {
     public GUIStyle gizmo_style = new GUIStyle();
 
-    private GameObject shape = null;
+    private Shape shape = null;
     public void clicked(Clickable clickable, Vector2 mouse_position) {
         /* ================================================================= */
         if (clickable.tag == "Shape") {
-            shape = clickable.gameObject;
+            shape = clickable.GetComponent<Shape>();
+            shape.pivot.SetActive(true);
         } else if (clickable.tag == "Field Piece" && shape != null) {
             float size = 1.0f;
             if (clickable.GetComponent<BoxCollider2D>()) {
@@ -36,6 +37,8 @@ public class GameLogic : MonoBehaviour {
             shape.transform.position = new_position;
             /* ================================================================= */
             shape.GetComponent<Collider2D>().enabled = false;
+            /* ================================================================= */
+            shape.pivot.SetActive(false);
             /* ================================================================= */
             shape = null;
         }

@@ -741,6 +741,7 @@ GameObject:
   - component: {fileID: 153539954}
   - component: {fileID: 153539955}
   - component: {fileID: 153539958}
+  - component: {fileID: 153539957}
   - component: {fileID: 153539956}
   m_Layer: 0
   m_Name: Triangle D
@@ -842,6 +843,18 @@ PolygonCollider2D:
       - {x: -1, y: 0}
       - {x: 0, y: 0}
       - {x: 0, y: 1}
+--- !u!114 &153539957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153539953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &153539958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1944,6 +1957,7 @@ GameObject:
   - component: {fileID: 218251076}
   - component: {fileID: 218251077}
   - component: {fileID: 218251080}
+  - component: {fileID: 218251079}
   - component: {fileID: 218251078}
   m_Layer: 0
   m_Name: Triangle J
@@ -2046,6 +2060,18 @@ PolygonCollider2D:
       - {x: 0, y: -0.1875}
       - {x: 0, y: 0.1875}
       - {x: -0.8125, y: 1}
+--- !u!114 &218251079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218251075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &218251080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4057,6 +4083,7 @@ GameObject:
   - component: {fileID: 525037853}
   - component: {fileID: 525037854}
   - component: {fileID: 525037857}
+  - component: {fileID: 525037856}
   - component: {fileID: 525037855}
   m_Layer: 0
   m_Name: Triangle A
@@ -4159,6 +4186,18 @@ PolygonCollider2D:
       - {x: 1, y: -1}
       - {x: 1, y: -0.8125}
       - {x: 0.1875, y: 0}
+--- !u!114 &525037856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525037852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &525037857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5897,6 +5936,7 @@ GameObject:
   - component: {fileID: 863989733}
   - component: {fileID: 863989734}
   - component: {fileID: 863989737}
+  - component: {fileID: 863989736}
   - component: {fileID: 863989735}
   m_Layer: 0
   m_Name: Triangle C
@@ -5998,6 +6038,18 @@ PolygonCollider2D:
       - {x: 0.1875, y: -1}
       - {x: 1, y: -0.1875}
       - {x: 1, y: 0}
+--- !u!114 &863989736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863989732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &863989737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6172,6 +6224,7 @@ GameObject:
   - component: {fileID: 886407331}
   - component: {fileID: 886407332}
   - component: {fileID: 886407335}
+  - component: {fileID: 886407334}
   - component: {fileID: 886407333}
   m_Layer: 0
   m_Name: Triangle H
@@ -6274,6 +6327,18 @@ PolygonCollider2D:
       - {x: 0.375, y: 0}
       - {x: 1, y: 0.75}
       - {x: 1, y: 1}
+--- !u!114 &886407334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886407330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &886407335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6988,6 +7053,7 @@ GameObject:
   - component: {fileID: 972944272}
   - component: {fileID: 972944273}
   - component: {fileID: 972944276}
+  - component: {fileID: 972944275}
   - component: {fileID: 972944274}
   m_Layer: 0
   m_Name: Rhombus A
@@ -7092,6 +7158,18 @@ PolygonCollider2D:
       - {x: 0.71875, y: 0.5625}
       - {x: 0.71875, y: 0.875}
       - {x: 0.15625, y: 1.4375}
+--- !u!114 &972944275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972944271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &972944276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11149,6 +11227,7 @@ GameObject:
   - component: {fileID: 1515421532}
   - component: {fileID: 1515421535}
   - component: {fileID: 1515421534}
+  - component: {fileID: 1515421536}
   - component: {fileID: 1515421533}
   m_Layer: 0
   m_Name: Square
@@ -11277,6 +11356,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1515421536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515421531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1528595494
 GameObject:
   m_ObjectHideFlags: 0
@@ -11637,6 +11728,7 @@ GameObject:
   - component: {fileID: 1623914684}
   - component: {fileID: 1623914685}
   - component: {fileID: 1623914688}
+  - component: {fileID: 1623914687}
   - component: {fileID: 1623914686}
   m_Layer: 0
   m_Name: Triangle E
@@ -11739,6 +11831,18 @@ PolygonCollider2D:
       - {x: -0.1875, y: -3}
       - {x: 0, y: -3}
       - {x: 0, y: 0}
+--- !u!114 &1623914687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623914683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1623914688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12453,6 +12557,7 @@ GameObject:
   - component: {fileID: 1778221432}
   - component: {fileID: 1778221433}
   - component: {fileID: 1778221436}
+  - component: {fileID: 1778221435}
   - component: {fileID: 1778221434}
   m_Layer: 0
   m_Name: Triangle B
@@ -12554,6 +12659,18 @@ PolygonCollider2D:
       - {x: 0.1875, y: -2}
       - {x: 2, y: -0.1875}
       - {x: 2, y: 0}
+--- !u!114 &1778221435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778221431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1778221436
 MonoBehaviour:
   m_ObjectHideFlags: 0
