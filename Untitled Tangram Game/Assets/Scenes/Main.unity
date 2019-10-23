@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 91340927}
   - component: {fileID: 91340929}
   - component: {fileID: 91340928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 95202970}
   - component: {fileID: 95202972}
   - component: {fileID: 95202971}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -582,7 +582,6 @@ GameObject:
   m_Component:
   - component: {fileID: 124961850}
   - component: {fileID: 124961849}
-  - component: {fileID: 124961851}
   m_Layer: 0
   m_Name: Game Field
   m_TagString: Untagged
@@ -654,32 +653,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &124961851
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124961848}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16.375, y: 14.375}
-    newSize: {x: 16.375, y: 14.375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 16.375, y: 14.375}
-  m_EdgeRadius: 0
 --- !u!1 &131557422
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +745,7 @@ GameObject:
   - component: {fileID: 153539958}
   - component: {fileID: 153539957}
   - component: {fileID: 153539956}
+  - component: {fileID: 153539959}
   m_Layer: 0
   m_Name: Triangle D
   m_TagString: Shape
@@ -929,6 +903,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ClickUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!50 &153539959
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153539953}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &170201900
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +975,7 @@ GameObject:
   - component: {fileID: 186388530}
   - component: {fileID: 186388532}
   - component: {fileID: 186388531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -1194,7 +1189,7 @@ GameObject:
   - component: {fileID: 189852535}
   - component: {fileID: 189852537}
   - component: {fileID: 189852536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -1329,7 +1324,7 @@ GameObject:
   - component: {fileID: 190581717}
   - component: {fileID: 190581719}
   - component: {fileID: 190581718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -1464,7 +1459,7 @@ GameObject:
   - component: {fileID: 198274612}
   - component: {fileID: 198274614}
   - component: {fileID: 198274613}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -1599,7 +1594,7 @@ GameObject:
   - component: {fileID: 200565975}
   - component: {fileID: 200565977}
   - component: {fileID: 200565976}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -1734,7 +1729,7 @@ GameObject:
   - component: {fileID: 203081731}
   - component: {fileID: 203081733}
   - component: {fileID: 203081732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -1869,7 +1864,7 @@ GameObject:
   - component: {fileID: 215076375}
   - component: {fileID: 215076377}
   - component: {fileID: 215076376}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -2005,6 +2000,7 @@ GameObject:
   - component: {fileID: 218251080}
   - component: {fileID: 218251079}
   - component: {fileID: 218251078}
+  - component: {fileID: 218251081}
   m_Layer: 0
   m_Name: Triangle J
   m_TagString: Shape
@@ -2163,6 +2159,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ClickUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!50 &218251081
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218251075}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &229916026
 GameObject:
   m_ObjectHideFlags: 0
@@ -2175,7 +2192,7 @@ GameObject:
   - component: {fileID: 229916028}
   - component: {fileID: 229916030}
   - component: {fileID: 229916029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -2310,7 +2327,7 @@ GameObject:
   - component: {fileID: 254253391}
   - component: {fileID: 254253393}
   - component: {fileID: 254253392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -2445,7 +2462,7 @@ GameObject:
   - component: {fileID: 323276630}
   - component: {fileID: 323276632}
   - component: {fileID: 323276631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -2580,7 +2597,7 @@ GameObject:
   - component: {fileID: 358159002}
   - component: {fileID: 358159004}
   - component: {fileID: 358159003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -2715,7 +2732,7 @@ GameObject:
   - component: {fileID: 364709950}
   - component: {fileID: 364709952}
   - component: {fileID: 364709951}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -2850,7 +2867,7 @@ GameObject:
   - component: {fileID: 382616011}
   - component: {fileID: 382616013}
   - component: {fileID: 382616012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -2985,7 +3002,7 @@ GameObject:
   - component: {fileID: 389893132}
   - component: {fileID: 389893134}
   - component: {fileID: 389893133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -3120,7 +3137,7 @@ GameObject:
   - component: {fileID: 413010923}
   - component: {fileID: 413010925}
   - component: {fileID: 413010924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -3255,7 +3272,7 @@ GameObject:
   - component: {fileID: 457999602}
   - component: {fileID: 457999604}
   - component: {fileID: 457999603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -3390,7 +3407,7 @@ GameObject:
   - component: {fileID: 462430385}
   - component: {fileID: 462430387}
   - component: {fileID: 462430386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -3525,7 +3542,7 @@ GameObject:
   - component: {fileID: 485997639}
   - component: {fileID: 485997641}
   - component: {fileID: 485997640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -3660,7 +3677,7 @@ GameObject:
   - component: {fileID: 503286652}
   - component: {fileID: 503286654}
   - component: {fileID: 503286653}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -3795,7 +3812,7 @@ GameObject:
   - component: {fileID: 514602425}
   - component: {fileID: 514602427}
   - component: {fileID: 514602426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -3930,7 +3947,7 @@ GameObject:
   - component: {fileID: 515259672}
   - component: {fileID: 515259674}
   - component: {fileID: 515259673}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -4148,6 +4165,7 @@ GameObject:
   - component: {fileID: 525037857}
   - component: {fileID: 525037856}
   - component: {fileID: 525037855}
+  - component: {fileID: 525037858}
   m_Layer: 0
   m_Name: Triangle A
   m_TagString: Shape
@@ -4306,6 +4324,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ClickUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!50 &525037858
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525037852}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &543146959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,7 +4357,7 @@ GameObject:
   - component: {fileID: 543146961}
   - component: {fileID: 543146963}
   - component: {fileID: 543146962}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -4453,7 +4492,7 @@ GameObject:
   - component: {fileID: 583448458}
   - component: {fileID: 583448460}
   - component: {fileID: 583448459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -4588,7 +4627,7 @@ GameObject:
   - component: {fileID: 616853899}
   - component: {fileID: 616853901}
   - component: {fileID: 616853900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -4723,7 +4762,7 @@ GameObject:
   - component: {fileID: 641638220}
   - component: {fileID: 641638222}
   - component: {fileID: 641638221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -4858,7 +4897,7 @@ GameObject:
   - component: {fileID: 720890991}
   - component: {fileID: 720890993}
   - component: {fileID: 720890992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -4993,7 +5032,7 @@ GameObject:
   - component: {fileID: 751952199}
   - component: {fileID: 751952201}
   - component: {fileID: 751952200}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -5207,7 +5246,7 @@ GameObject:
   - component: {fileID: 762220440}
   - component: {fileID: 762220442}
   - component: {fileID: 762220441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -5342,7 +5381,7 @@ GameObject:
   - component: {fileID: 764182750}
   - component: {fileID: 764182752}
   - component: {fileID: 764182751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -5477,7 +5516,7 @@ GameObject:
   - component: {fileID: 798626572}
   - component: {fileID: 798626574}
   - component: {fileID: 798626573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -5612,7 +5651,7 @@ GameObject:
   - component: {fileID: 812937242}
   - component: {fileID: 812937244}
   - component: {fileID: 812937243}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -5747,7 +5786,7 @@ GameObject:
   - component: {fileID: 816201317}
   - component: {fileID: 816201319}
   - component: {fileID: 816201318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -5882,7 +5921,7 @@ GameObject:
   - component: {fileID: 861028692}
   - component: {fileID: 861028694}
   - component: {fileID: 861028693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -6018,6 +6057,7 @@ GameObject:
   - component: {fileID: 863989737}
   - component: {fileID: 863989736}
   - component: {fileID: 863989735}
+  - component: {fileID: 863989738}
   m_Layer: 0
   m_Name: Triangle C
   m_TagString: Shape
@@ -6175,6 +6215,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ClickUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!50 &863989738
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863989732}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &865627130
 GameObject:
   m_ObjectHideFlags: 0
@@ -6187,7 +6248,7 @@ GameObject:
   - component: {fileID: 865627132}
   - component: {fileID: 865627134}
   - component: {fileID: 865627133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -6323,6 +6384,7 @@ GameObject:
   - component: {fileID: 886407335}
   - component: {fileID: 886407334}
   - component: {fileID: 886407333}
+  - component: {fileID: 886407336}
   m_Layer: 0
   m_Name: Triangle H
   m_TagString: Shape
@@ -6481,6 +6543,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ClickUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!50 &886407336
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886407330}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &913922842
 GameObject:
   m_ObjectHideFlags: 0
@@ -6493,7 +6576,7 @@ GameObject:
   - component: {fileID: 913922844}
   - component: {fileID: 913922846}
   - component: {fileID: 913922845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -6628,7 +6711,7 @@ GameObject:
   - component: {fileID: 920441067}
   - component: {fileID: 920441069}
   - component: {fileID: 920441068}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -6763,7 +6846,7 @@ GameObject:
   - component: {fileID: 946075475}
   - component: {fileID: 946075477}
   - component: {fileID: 946075476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -6898,7 +6981,7 @@ GameObject:
   - component: {fileID: 951635675}
   - component: {fileID: 951635677}
   - component: {fileID: 951635676}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -7033,7 +7116,7 @@ GameObject:
   - component: {fileID: 964591688}
   - component: {fileID: 964591690}
   - component: {fileID: 964591689}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -7169,6 +7252,7 @@ GameObject:
   - component: {fileID: 972944276}
   - component: {fileID: 972944275}
   - component: {fileID: 972944274}
+  - component: {fileID: 972944277}
   m_Layer: 0
   m_Name: Rhombus A
   m_TagString: Shape
@@ -7329,6 +7413,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ClickUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!50 &972944277
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972944271}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &973714705
 GameObject:
   m_ObjectHideFlags: 0
@@ -7341,7 +7446,7 @@ GameObject:
   - component: {fileID: 973714707}
   - component: {fileID: 973714709}
   - component: {fileID: 973714708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -7476,7 +7581,7 @@ GameObject:
   - component: {fileID: 1023450317}
   - component: {fileID: 1023450319}
   - component: {fileID: 1023450318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -7611,7 +7716,7 @@ GameObject:
   - component: {fileID: 1049895835}
   - component: {fileID: 1049895837}
   - component: {fileID: 1049895836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -7746,7 +7851,7 @@ GameObject:
   - component: {fileID: 1081056305}
   - component: {fileID: 1081056307}
   - component: {fileID: 1081056306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -7960,7 +8065,7 @@ GameObject:
   - component: {fileID: 1128092006}
   - component: {fileID: 1128092008}
   - component: {fileID: 1128092007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -8095,7 +8200,7 @@ GameObject:
   - component: {fileID: 1172368036}
   - component: {fileID: 1172368038}
   - component: {fileID: 1172368037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -8230,7 +8335,7 @@ GameObject:
   - component: {fileID: 1176784043}
   - component: {fileID: 1176784045}
   - component: {fileID: 1176784044}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -8444,7 +8549,7 @@ GameObject:
   - component: {fileID: 1217333147}
   - component: {fileID: 1217333149}
   - component: {fileID: 1217333148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -8579,7 +8684,7 @@ GameObject:
   - component: {fileID: 1258528156}
   - component: {fileID: 1258528158}
   - component: {fileID: 1258528157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -8714,7 +8819,7 @@ GameObject:
   - component: {fileID: 1265575669}
   - component: {fileID: 1265575671}
   - component: {fileID: 1265575670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -8849,7 +8954,7 @@ GameObject:
   - component: {fileID: 1281140077}
   - component: {fileID: 1281140079}
   - component: {fileID: 1281140078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -8984,7 +9089,7 @@ GameObject:
   - component: {fileID: 1308934617}
   - component: {fileID: 1308934619}
   - component: {fileID: 1308934618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -9119,7 +9224,7 @@ GameObject:
   - component: {fileID: 1313165984}
   - component: {fileID: 1313165986}
   - component: {fileID: 1313165985}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -9254,7 +9359,7 @@ GameObject:
   - component: {fileID: 1315632743}
   - component: {fileID: 1315632745}
   - component: {fileID: 1315632744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -9389,7 +9494,7 @@ GameObject:
   - component: {fileID: 1316027886}
   - component: {fileID: 1316027888}
   - component: {fileID: 1316027887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -9524,7 +9629,7 @@ GameObject:
   - component: {fileID: 1318173525}
   - component: {fileID: 1318173527}
   - component: {fileID: 1318173526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -9659,7 +9764,7 @@ GameObject:
   - component: {fileID: 1331421689}
   - component: {fileID: 1331421691}
   - component: {fileID: 1331421690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -9794,7 +9899,7 @@ GameObject:
   - component: {fileID: 1331738637}
   - component: {fileID: 1331738639}
   - component: {fileID: 1331738638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -9929,7 +10034,7 @@ GameObject:
   - component: {fileID: 1342064365}
   - component: {fileID: 1342064367}
   - component: {fileID: 1342064366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -10064,7 +10169,7 @@ GameObject:
   - component: {fileID: 1345250011}
   - component: {fileID: 1345250013}
   - component: {fileID: 1345250012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -10334,7 +10439,7 @@ GameObject:
   - component: {fileID: 1383029794}
   - component: {fileID: 1383029796}
   - component: {fileID: 1383029795}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -10549,7 +10654,7 @@ GameObject:
   - component: {fileID: 1400093052}
   - component: {fileID: 1400093054}
   - component: {fileID: 1400093053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -10684,7 +10789,7 @@ GameObject:
   - component: {fileID: 1402715136}
   - component: {fileID: 1402715138}
   - component: {fileID: 1402715137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -10819,7 +10924,7 @@ GameObject:
   - component: {fileID: 1463206013}
   - component: {fileID: 1463206015}
   - component: {fileID: 1463206014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -10954,7 +11059,7 @@ GameObject:
   - component: {fileID: 1463376674}
   - component: {fileID: 1463376676}
   - component: {fileID: 1463376675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -11089,7 +11194,7 @@ GameObject:
   - component: {fileID: 1480491268}
   - component: {fileID: 1480491270}
   - component: {fileID: 1480491269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -11224,7 +11329,7 @@ GameObject:
   - component: {fileID: 1483051558}
   - component: {fileID: 1483051560}
   - component: {fileID: 1483051559}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -11359,7 +11464,7 @@ GameObject:
   - component: {fileID: 1511529902}
   - component: {fileID: 1511529904}
   - component: {fileID: 1511529903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -11495,6 +11600,7 @@ GameObject:
   - component: {fileID: 1515421534}
   - component: {fileID: 1515421536}
   - component: {fileID: 1515421533}
+  - component: {fileID: 1515421537}
   m_Layer: 0
   m_Name: Square
   m_TagString: Shape
@@ -11651,6 +11757,27 @@ MonoBehaviour:
     m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   pivot: {fileID: 0}
+--- !u!50 &1515421537
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515421531}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1528595494
 GameObject:
   m_ObjectHideFlags: 0
@@ -11663,7 +11790,7 @@ GameObject:
   - component: {fileID: 1528595496}
   - component: {fileID: 1528595498}
   - component: {fileID: 1528595497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -11877,7 +12004,7 @@ GameObject:
   - component: {fileID: 1591497384}
   - component: {fileID: 1591497386}
   - component: {fileID: 1591497385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -12013,6 +12140,7 @@ GameObject:
   - component: {fileID: 1623914688}
   - component: {fileID: 1623914687}
   - component: {fileID: 1623914686}
+  - component: {fileID: 1623914689}
   m_Layer: 0
   m_Name: Triangle E
   m_TagString: Shape
@@ -12108,12 +12236,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.1875, y: 0}
-      - {x: -1.5, y: -1.3125}
-      - {x: -1.5, y: -1.6875}
-      - {x: -0.1875, y: -3}
-      - {x: 0, y: -3}
-      - {x: 0, y: 0}
+    - - {x: -0.26765394, y: -0.38295782}
+      - {x: -1.314783, y: -1.462093}
+      - {x: -1.2900873, y: -1.5393263}
+      - {x: -0.27393413, y: -2.5925226}
+      - {x: -0.120639324, y: -2.711956}
+      - {x: -0.11577797, y: -0.2404617}
 --- !u!114 &1623914687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12171,6 +12299,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ClickUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!50 &1623914689
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623914683}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1630007199
 GameObject:
   m_ObjectHideFlags: 0
@@ -12183,7 +12332,7 @@ GameObject:
   - component: {fileID: 1630007201}
   - component: {fileID: 1630007203}
   - component: {fileID: 1630007202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -12318,7 +12467,7 @@ GameObject:
   - component: {fileID: 1657705043}
   - component: {fileID: 1657705045}
   - component: {fileID: 1657705044}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -12453,7 +12602,7 @@ GameObject:
   - component: {fileID: 1683393472}
   - component: {fileID: 1683393474}
   - component: {fileID: 1683393473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -12588,7 +12737,7 @@ GameObject:
   - component: {fileID: 1710229795}
   - component: {fileID: 1710229797}
   - component: {fileID: 1710229796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -12723,7 +12872,7 @@ GameObject:
   - component: {fileID: 1759846867}
   - component: {fileID: 1759846869}
   - component: {fileID: 1759846868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -12859,6 +13008,7 @@ GameObject:
   - component: {fileID: 1778221436}
   - component: {fileID: 1778221435}
   - component: {fileID: 1778221434}
+  - component: {fileID: 1778221437}
   m_Layer: 0
   m_Name: Triangle B
   m_TagString: Shape
@@ -13016,6 +13166,27 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: ClickUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!50 &1778221437
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778221431}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1785644707
 GameObject:
   m_ObjectHideFlags: 0
@@ -13028,7 +13199,7 @@ GameObject:
   - component: {fileID: 1785644709}
   - component: {fileID: 1785644711}
   - component: {fileID: 1785644710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -13163,7 +13334,7 @@ GameObject:
   - component: {fileID: 1849596805}
   - component: {fileID: 1849596807}
   - component: {fileID: 1849596806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -13298,7 +13469,7 @@ GameObject:
   - component: {fileID: 1853392714}
   - component: {fileID: 1853392716}
   - component: {fileID: 1853392715}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -13433,7 +13604,7 @@ GameObject:
   - component: {fileID: 1856282885}
   - component: {fileID: 1856282887}
   - component: {fileID: 1856282886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -13568,7 +13739,7 @@ GameObject:
   - component: {fileID: 1862545136}
   - component: {fileID: 1862545138}
   - component: {fileID: 1862545137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -13703,7 +13874,7 @@ GameObject:
   - component: {fileID: 1931015867}
   - component: {fileID: 1931015869}
   - component: {fileID: 1931015868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -13838,7 +14009,7 @@ GameObject:
   - component: {fileID: 1931698781}
   - component: {fileID: 1931698783}
   - component: {fileID: 1931698782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -13973,7 +14144,7 @@ GameObject:
   - component: {fileID: 1972142413}
   - component: {fileID: 1972142415}
   - component: {fileID: 1972142414}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -14108,7 +14279,7 @@ GameObject:
   - component: {fileID: 1993726317}
   - component: {fileID: 1993726319}
   - component: {fileID: 1993726318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -14243,7 +14414,7 @@ GameObject:
   - component: {fileID: 1998694575}
   - component: {fileID: 1998694577}
   - component: {fileID: 1998694576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -14375,7 +14546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2023855225}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Pieces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14498,7 +14669,7 @@ GameObject:
   - component: {fileID: 2033132496}
   - component: {fileID: 2033132498}
   - component: {fileID: 2033132497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -14633,7 +14804,7 @@ GameObject:
   - component: {fileID: 2038848275}
   - component: {fileID: 2038848277}
   - component: {fileID: 2038848276}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -14768,7 +14939,7 @@ GameObject:
   - component: {fileID: 2050696233}
   - component: {fileID: 2050696235}
   - component: {fileID: 2050696234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
@@ -15061,7 +15232,7 @@ GameObject:
   - component: {fileID: 2144694720}
   - component: {fileID: 2144694722}
   - component: {fileID: 2144694721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Field Piece
   m_TagString: Field Piece
   m_Icon: {fileID: 0}
