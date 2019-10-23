@@ -16,6 +16,7 @@ TextureImporter:
     21300022: Shape Box
     21300024: Pivot
     21300026: Square
+    21300028: Game Field Collider Mask
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -353,6 +354,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 21828e83a62129b4a905d17ba65cd50f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Field Collider Mask
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 541
+        width: 262
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a1e7ee92afd1e409d1280e332f27d1
       vertices: []
       indices: 
       edges: []

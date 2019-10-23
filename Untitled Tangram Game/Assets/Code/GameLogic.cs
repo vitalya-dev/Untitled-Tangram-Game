@@ -7,11 +7,11 @@ using UnityEditor;
 #endif
 
 public class GameLogic : MonoBehaviour {
+    public PolygonCollider2D game_field_collider_mask;
     public GUIStyle gizmo_style = new GUIStyle();
 
     private Shape shape = null;
     public void clicked(Clickable clickable, Vector2 mouse_position) {
-        /* ================================================================= */
         if (clickable.tag == "Shape") {
             shape = clickable.GetComponent<Shape>();
             shape.pivot.SetActive(true);
@@ -36,12 +36,19 @@ public class GameLogic : MonoBehaviour {
             /* ================================================================= */
             shape.transform.position = new_position;
             /* ================================================================= */
-            shape.GetComponent<Collider2D>().enabled = false;
+            shape.GetComponent<Clickable>().enabled = false;
             /* ================================================================= */
             shape.pivot.SetActive(false);
             /* ================================================================= */
             shape = null;
         }
+    }
+
+    public void collided(Collider2D a, Collider2D b) {
+        if (a.GetComponent<Shape>())
+            Destroy(a.gameObject);
+        if (b.GetComponent<Shape>())
+            Destroy(b.gameObject);
     }
 
     void OnDrawGizmos() {
