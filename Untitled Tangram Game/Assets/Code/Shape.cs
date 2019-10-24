@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class CollideUnityEvent : UnityEvent<Collider2D, Collider2D> { }
+public class CollideUnityEvent : UnityEvent<GameObject, GameObject> { }
 
 public class Shape : MonoBehaviour {
     public CollideUnityEvent collide_callback = new CollideUnityEvent();
@@ -18,11 +18,6 @@ public class Shape : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D col) {
-        collide_callback.Invoke(GetComponent<Collider2D>(), col);
-    }
-
-    void OnCollisionEnter2D(Collision2D collision) {
-        Debug.Log(collision.otherCollider.name);
-        Debug.Log("Collided");
+        collide_callback.Invoke(gameObject, col.gameObject);
     }
 }

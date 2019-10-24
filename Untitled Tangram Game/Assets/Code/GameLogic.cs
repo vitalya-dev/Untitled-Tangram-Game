@@ -44,11 +44,10 @@ public class GameLogic : MonoBehaviour {
         }
     }
 
-    public void collided(Collider2D a, Collider2D b) {
+    public void collided(GameObject a, GameObject b) {
+        Debug.Log("Collision:" + a.name + "," + b.name);
         if (a.GetComponent<Shape>())
             Destroy(a.gameObject);
-        if (b.GetComponent<Shape>())
-            Destroy(b.gameObject);
     }
 
     void OnDrawGizmos() {
