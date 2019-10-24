@@ -17,6 +17,15 @@ TextureImporter:
     21300024: Pivot
     21300026: Square
     21300028: Game Field Collider Mask
+    21300030: Triangle H Mask
+    21300032: Triangle E Mask
+    21300034: Triangle A Mask
+    21300036: Triangle C Mask
+    21300038: Triangle D Mask
+    21300040: Rhombus A Mask
+    21300042: Triangle B Mask
+    21300044: Triangle J Mask
+    21300046: Square Mask
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -374,6 +383,186 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 48a1e7ee92afd1e409d1280e332f27d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle H Mask
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 482
+        width: 23
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0413e28b64dd304ea3ec851251dc13f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle E Mask
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 501
+        width: 20
+        height: 39
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6fcdb20cc577b4ea3113878c4592c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle A Mask
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 546
+        width: 23
+        height: 12
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2f098f259b16649bceff58c926e89f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle C Mask
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 517
+        width: 9
+        height: 9
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2257ac1f76c0e6344bc745269c858d7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle D Mask
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 498
+        width: 9
+        height: 9
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4910579588b503a48a3fc5ac1364d569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rhombus A Mask
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 491
+        width: 19
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76fa7bb18794ce48879d06c85b291f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle B Mask
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 533
+        width: 25
+        height: 25
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e1f144cd97eab4ebd25f8431569d9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle J Mask
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 486
+        width: 12
+        height: 23
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a95c7b66952c5478ef0f00d71d1097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Mask
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 546
+        width: 12
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da714ea13940a5d45af411ace4b2c0f4
       vertices: []
       indices: 
       edges: []
