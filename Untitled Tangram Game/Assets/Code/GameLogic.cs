@@ -13,9 +13,11 @@ public class GameLogic : MonoBehaviour {
     private Shape shape = null;
     public void clicked(Clickable clickable, Vector2 mouse_position) {
         if (clickable.tag == "Shape") {
+            if (shape)
+                shape.pivot.SetActive(false);
             shape = clickable.GetComponent<Shape>();
             shape.pivot.SetActive(true);
-        } else if (clickable.tag == "Field Piece" && shape != null) {
+        } else if (clickable.tag == "Field Piece" && shape) {
             float size = 1.0f;
             if (clickable.GetComponent<BoxCollider2D>()) {
                 size = clickable.GetComponent<BoxCollider2D>().size.x;
