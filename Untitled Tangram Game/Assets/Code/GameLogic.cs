@@ -8,7 +8,9 @@ using UnityEditor;
 
 public class GameLogic : MonoBehaviour {
     public PolygonCollider2D game_field_collider_mask;
+    public GameObject shapes;
     public GUIStyle gizmo_style = new GUIStyle();
+    public int target_shape_hash = 0;
 
     private Shape shape = null;
     public void clicked(Clickable clickable, Vector2 mouse_position) {
@@ -62,4 +64,12 @@ public class GameLogic : MonoBehaviour {
 #endif
     }
 
+    public void am_i_done() {
+        Vector3 hash_vec = Vector3.zero;
+        for (int i = 1; i < shapes.transform.childCount; i++) {
+            hash_vec += (shapes.transform.GetChild(0).position - shapes.transform.GetChild(i).position) * i * 100;     
+        }
+        int shape_hash = (int)Mathf.Abs(hash_vec.x + hash_vec.y + hash_vec.z);
+        Debug.Log(shape_hash == target_shape_hash);
+    }
 }
