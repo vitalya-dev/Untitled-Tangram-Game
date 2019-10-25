@@ -224,7 +224,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
-  target_hash: 7699
+  target_shape_hash: 7699
 --- !u!1 &91340925
 GameObject:
   m_ObjectHideFlags: 0
