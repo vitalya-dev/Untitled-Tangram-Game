@@ -13,34 +13,14 @@ public class GameLogic : MonoBehaviour {
     public GameObject target_shape;
     public int target_shape_hash = 0;
 
-    public int difficulty = 5;
-
     public GUIStyle gizmo_style = new GUIStyle();
 
     private Shape active_shape = null;
 
-    IEnumerator Start() {
+    void Start() {
         target_shape.SetActive(true);
-
-        SpriteRenderer background = target_shape.transform.Find("Background").GetComponent<SpriteRenderer>();
-        Color a = background.color;
-        Color b = new Color(
-            background.color.r,
-            background.color.g,
-            background.color.b,
-            0.0f
-        );
-
-        float elapsed_time = 0;
-        do {
-            elapsed_time += Time.deltaTime;
-            background.color = Color.Lerp(a, b, elapsed_time / difficulty);
-            yield return null;
-        } while (background.color.a > 0);
-
-        target_shape.SetActive(false);
     }
-
+    
     public void clicked(Clickable clickable, Vector2 mouse_position) {
         if (clickable.tag == "Shape") {
             if (active_shape)
