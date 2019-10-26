@@ -26,6 +26,8 @@ TextureImporter:
     21300042: Triangle B Mask
     21300044: Triangle J Mask
     21300046: Square Mask
+    21300048: Camel
+    21300050: Shape Background
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -563,6 +565,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: da714ea13940a5d45af411ace4b2c0f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camel
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 656
+        width: 125
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2fa171f9f88854082167be8acfd345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shape Background
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 608
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f01a1bfae6b2c48be686a17c0935ba
       vertices: []
       indices: 
       edges: []

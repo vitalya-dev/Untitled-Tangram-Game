@@ -7,19 +7,46 @@ using UnityEditor;
 #endif
 
 public class GameLogic : MonoBehaviour {
-    public PolygonCollider2D game_field_collider_mask;
     public GameObject shapes;
-    public GUIStyle gizmo_style = new GUIStyle();
+
+    public GameObject target_shape;
     public int target_shape_hash = 0;
 
-    private Shape shape = null;
+    public int difficulty = 5;
+
+    public GUIStyle gizmo_style = new GUIStyle();
+
+    private Shape active_shape = null;
+
+    IEnumerator Start() {
+        target_shape.SetActive(true);
+
+        SpriteRenderer background = target_shape.transform.Find("Background").GetComponent<SpriteRenderer>();
+        Color a = background.color;
+        Color b = new Color(
+            background.color.r,
+            background.color.g,
+            background.color.b,
+            0.0f
+        );
+
+        float elapsed_time = 0;
+        do {
+            elapsed_time += Time.deltaTime;
+            background.color = Color.Lerp(a, b, elapsed_time / difficulty);
+            yield return null;
+        } while (background.color.a > 0);
+
+        target_shape.SetActive(false);
+    }
+
     public void clicked(Clickable clickable, Vector2 mouse_position) {
         if (clickable.tag == "Shape") {
-            if (shape)
-                shape.pivot.SetActive(false);
-            shape = clickable.GetComponent<Shape>();
-            shape.pivot.SetActive(true);
-        } else if (clickable.tag == "Field Piece" && shape) {
+            if (active_shape)
+                active_shape.pivot.SetActive(false);
+            active_shape = clickable.GetComponent<Shape>();
+            active_shape.pivot.SetActive(true);
+        } else if (clickable.tag == "Field Piece" && active_shape) {
             float size = 1.0f;
             if (clickable.GetComponent<BoxCollider2D>()) {
                 size = clickable.GetComponent<BoxCollider2D>().size.x;
@@ -36,15 +63,15 @@ public class GameLogic : MonoBehaviour {
             Vector3 new_position = new Vector3();
             new_position.x = clickable.gameObject.transform.position.x + (size / 2) * offset.x;
             new_position.y = clickable.gameObject.transform.position.y + (size / 2) * offset.y;
-            new_position.z = shape.transform.position.z;
+            new_position.z = active_shape.transform.position.z;
             /* ================================================================= */
-            shape.transform.position = new_position;
+            active_shape.transform.position = new_position;
             /* ================================================================= */
-            shape.GetComponent<Clickable>().enabled = false;
+            active_shape.GetComponent<Clickable>().enabled = false;
             /* ================================================================= */
-            shape.pivot.SetActive(false);
+            active_shape.pivot.SetActive(false);
             /* ================================================================= */
-            shape = null;
+            active_shape = null;
         }
     }
 
@@ -58,7 +85,7 @@ public class GameLogic : MonoBehaviour {
 #if UNITY_EDITOR
         Handles.Label(
             transform.position,
-            "GameLogic: " + (shape ? shape.name : "None of shape selected"),
+            "GameLogic: " + (active_shape ? active_shape.name : "None of shape selected"),
             gizmo_style
         );
 #endif
@@ -67,7 +94,7 @@ public class GameLogic : MonoBehaviour {
     public void am_i_done() {
         Vector3 hash_vec = Vector3.zero;
         for (int i = 1; i < shapes.transform.childCount; i++) {
-            hash_vec += (shapes.transform.GetChild(0).position - shapes.transform.GetChild(i).position) * i * 100;     
+            hash_vec += (shapes.transform.GetChild(0).position - shapes.transform.GetChild(i).position) * i * 100;
         }
         int shape_hash = (int)Mathf.Abs(hash_vec.x + hash_vec.y + hash_vec.z);
         Debug.Log(shape_hash == target_shape_hash);
