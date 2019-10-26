@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -98,5 +99,10 @@ public class GameLogic : MonoBehaviour {
         }
         int shape_hash = (int)Mathf.Abs(hash_vec.x + hash_vec.y + hash_vec.z);
         Debug.Log(shape_hash == target_shape_hash);
+    }
+
+    public void level_restart() {
+        Scene current_scene = SceneManager.GetActiveScene();
+        SceneManager.LoadSceneAsync(current_scene.buildIndex);
     }
 }
