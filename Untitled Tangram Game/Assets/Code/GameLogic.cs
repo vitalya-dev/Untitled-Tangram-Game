@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -10,17 +11,20 @@ using UnityEditor;
 public class GameLogic : MonoBehaviour {
     public GameObject shapes;
 
-    public GameObject target_shape;
     public int target_shape_hash = 0;
 
     public GUIStyle gizmo_style = new GUIStyle();
 
     private Shape active_shape = null;
 
+    public UnityEvent level_start;
+
+    public UnityEvent level_complete_callback;
+
     void Start() {
-        target_shape.SetActive(true);
+        level_start.Invoke();
     }
-    
+
     public void clicked(Clickable clickable, Vector2 mouse_position) {
         if (clickable.tag == "Shape") {
             if (active_shape)
@@ -53,6 +57,9 @@ public class GameLogic : MonoBehaviour {
             active_shape.pivot.SetActive(false);
             /* ================================================================= */
             active_shape = null;
+            /* ================================================================= */
+            if (is_it_done())
+                level_complete_callback.Invoke();
         }
     }
 
@@ -72,13 +79,13 @@ public class GameLogic : MonoBehaviour {
 #endif
     }
 
-    public void am_i_done() {
+    private bool is_it_done() {
         Vector3 hash_vec = Vector3.zero;
         for (int i = 1; i < shapes.transform.childCount; i++) {
             hash_vec += (shapes.transform.GetChild(0).position - shapes.transform.GetChild(i).position) * i * 100;
         }
         int shape_hash = (int)Mathf.Abs(hash_vec.x + hash_vec.y + hash_vec.z);
-        Debug.Log(shape_hash == target_shape_hash);
+        return shape_hash == target_shape_hash;
     }
 
     public void level_restart() {
