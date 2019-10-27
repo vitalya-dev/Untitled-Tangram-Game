@@ -91,8 +91,8 @@ public class GameLogic : MonoBehaviour {
     }
 
     public void level_restart() {
-        GlobalVariables.attempts += 1;
-        if (GlobalVariables.attempts <= 3) {
+        if (GlobalVariables.attempts < GlobalVariables.max_attempts) {
+            GlobalVariables.attempts += 1;
             Scene current_scene = SceneManager.GetActiveScene();
             SceneManager.LoadSceneAsync(current_scene.buildIndex);
         } else {
