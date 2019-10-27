@@ -21,6 +21,8 @@ public class GameLogic : MonoBehaviour {
 
     public UnityEvent level_complete_callback;
 
+    public UnityEvent level_fail_callback;
+
     void Start() {
         level_start.Invoke();
     }
@@ -89,7 +91,12 @@ public class GameLogic : MonoBehaviour {
     }
 
     public void level_restart() {
-        Scene current_scene = SceneManager.GetActiveScene();
-        SceneManager.LoadSceneAsync(current_scene.buildIndex);
+        GlobalVariables.attempts += 1;
+        if (GlobalVariables.attempts <= 3) {
+            Scene current_scene = SceneManager.GetActiveScene();
+            SceneManager.LoadSceneAsync(current_scene.buildIndex);
+        } else {
+            level_fail_callback.Invoke();
+        }
     }
 }
