@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FadeEffect : MonoBehaviour {
     public float duration = 5;
+
+    public UnityEvent fade_callback;
 
     IEnumerator Start() {
         SpriteRenderer renderer = GetComponent<SpriteRenderer>();
@@ -18,6 +21,7 @@ public class FadeEffect : MonoBehaviour {
             yield return null;
         } while (elapsed_time / duration < 1);
         /* ==================================================== */
+        fade_callback.Invoke();
         gameObject.SetActive(false);
 
     }

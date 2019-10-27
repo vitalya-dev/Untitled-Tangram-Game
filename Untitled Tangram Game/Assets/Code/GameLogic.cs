@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -95,8 +95,6 @@ public class GameLogic : MonoBehaviour {
             GlobalVariables.attempts += 1;
             Scene current_scene = SceneManager.GetActiveScene();
             SceneManager.LoadSceneAsync(current_scene.buildIndex);
-        } else {
-            level_fail_callback.Invoke();
         }
     }
 }
