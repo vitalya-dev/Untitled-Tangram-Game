@@ -62,6 +62,8 @@ public class GameLogic : MonoBehaviour {
             /* ================================================================= */
             if (is_it_done())
                 level_complete_callback.Invoke();
+            else if (is_it_fail())
+                level_fail_callback.Invoke();
         }
     }
 
@@ -87,8 +89,16 @@ public class GameLogic : MonoBehaviour {
             hash_vec += (shapes.transform.GetChild(0).position - shapes.transform.GetChild(i).position) * i * 100;
         }
         int shape_hash = (int)Mathf.Abs(hash_vec.x + hash_vec.y + hash_vec.z);
-        return shape_hash == target_shape_hash;
+        return Mathf.Abs(shape_hash - target_shape_hash) <= 1;
     }
+
+     private bool is_it_fail() {
+         for (int i = 0; i < shapes.transform.childCount; i++) {
+            if (shapes.transform.GetChild(i).GetComponent<Clickable>().enabled)
+                return false;
+        }
+         return true;
+     }
 
     public void level_restart() {
         if (GlobalVariables.attempts < GlobalVariables.max_attempts) {
@@ -96,5 +106,9 @@ public class GameLogic : MonoBehaviour {
             Scene current_scene = SceneManager.GetActiveScene();
             SceneManager.LoadSceneAsync(current_scene.buildIndex);
         }
+    }
+
+    public void debug(string message) {
+        Debug.Log(message);
     }
 }
