@@ -8,7 +8,11 @@ public class FadeEffect : MonoBehaviour {
 
     public UnityEvent fade_callback;
 
+    private bool interrupted;
     IEnumerator Start() {
+        /* ==================================================== */
+        interrupted = false;
+        /* ==================================================== */
         SpriteRenderer renderer = GetComponent<SpriteRenderer>();
         /* ==================================================== */
         Color a = renderer.color;
@@ -19,10 +23,14 @@ public class FadeEffect : MonoBehaviour {
             elapsed_time += Time.deltaTime;
             renderer.color = Color.Lerp(a, b, elapsed_time / duration);
             yield return null;
-        } while (elapsed_time / duration < 1);
+        } while (elapsed_time / duration < 1 && !interrupted);
         /* ==================================================== */
+        renderer.color = b;
         fade_callback.Invoke();
         gameObject.SetActive(false);
+    }
 
+    public void interrupt() {
+        interrupted = true;
     }
 }
