@@ -28,6 +28,10 @@ TextureImporter:
     21300046: Square Mask
     21300048: Camel
     21300050: Shape Background
+    21300052: Triangle A1
+    21300054: Triangle A2
+    21300056: Triangle A3
+    21300058: Triangle A4
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -598,13 +602,93 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: b7f01a1bfae6b2c48be686a17c0935ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle A1
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 494
+        width: 45
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd18091850977cc4cb1b800afa367a7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle A2
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 453
+        width: 45
+        height: 22
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a196fea491b636142a6f52401d08ebb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle A3
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 496
+        width: 45
+        height: 22
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4027fe86de044ff40a395f5fedbc4592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle A4
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 535
+        width: 45
+        height: 22
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bab44fcfff1ab449e058bf50c5b701
       vertices: []
       indices: 
       edges: []
