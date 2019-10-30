@@ -617,12 +617,12 @@ TextureImporter:
       name: Triangle A1
       rect:
         serializedVersion: 2
-        x: 608
-        y: 494
-        width: 45
-        height: 22
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 566
+        y: 592
+        width: 64
+        height: 32
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -637,12 +637,12 @@ TextureImporter:
       name: Triangle A2
       rect:
         serializedVersion: 2
-        x: 666
-        y: 453
-        width: 45
-        height: 22
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 640
+        y: 528
+        width: 64
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -657,10 +657,10 @@ TextureImporter:
       name: Triangle A3
       rect:
         serializedVersion: 2
-        x: 723
-        y: 496
-        width: 45
-        height: 22
+        x: 708
+        y: 592
+        width: 64
+        height: 32
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -677,12 +677,12 @@ TextureImporter:
       name: Triangle A4
       rect:
         serializedVersion: 2
-        x: 668
-        y: 535
-        width: 45
-        height: 22
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 635
+        y: 640
+        width: 64
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
