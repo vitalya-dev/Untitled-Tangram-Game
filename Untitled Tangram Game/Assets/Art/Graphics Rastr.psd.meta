@@ -32,6 +32,8 @@ TextureImporter:
     21300054: Triangle A2
     21300056: Triangle A3
     21300058: Triangle A4
+    21300060: Triangle
+    21300062: Vertice
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -689,6 +691,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b7bab44fcfff1ab449e058bf50c5b701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 326
+        width: 230
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce2f34f9ac375a4ca30663ad9356215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vertice
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 788
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9e197e547966b459f51382a0b5ed40
       vertices: []
       indices: 
       edges: []

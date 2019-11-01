@@ -84,21 +84,30 @@ public class GameLogic : MonoBehaviour {
     }
 
     private bool is_it_done() {
-        Vector3 hash_vec = Vector3.zero;
-        for (int i = 1; i < shapes.transform.childCount; i++) {
-            hash_vec += (shapes.transform.GetChild(0).position - shapes.transform.GetChild(i).position) * i * 100;
-        }
-        int shape_hash = (int)Mathf.Abs(hash_vec.x + hash_vec.y + hash_vec.z);
-        return Mathf.Abs(shape_hash - target_shape_hash) <= 1;
+        return Mathf.Abs(get_shape_hash() - target_shape_hash) <= 1;
     }
 
-     private bool is_it_fail() {
-         for (int i = 0; i < shapes.transform.childCount; i++) {
+    public int get_shape_hash() {
+        Vector3 hash_vec = Vector3.zero;
+        for (int i = 1; i < shapes.transform.childCount; i++) {
+            foreach (GameObject vertice in shapes.transform.GetChild(i).GetComponent<Shape>().vertices) {
+                hash_vec +=
+                    (shapes.transform.GetChild(0).GetComponent<Shape>().pivot.transform.position -
+                    vertice.transform.position) * 1000;
+            }
+        }
+        return (int)Mathf.Abs(hash_vec.x + hash_vec.y);
+    }
+
+    private bool is_it_fail() {
+        if (is_it_done())
+            return false;
+        for (int i = 0; i < shapes.transform.childCount; i++) {
             if (shapes.transform.GetChild(i).GetComponent<Clickable>().enabled)
                 return false;
         }
-         return true;
-     }
+        return true;
+    }
 
     public void level_restart() {
         if (GlobalVariables.attempts < GlobalVariables.max_attempts) {
