@@ -26,7 +26,7 @@ TextureImporter:
     21300042: Triangle B Mask
     21300044: Triangle J Mask
     21300046: Square Mask
-    21300048: Camel
+    21300048: Eclipse Camel
     21300050: Shape Background
     21300052: Triangle A1
     21300054: Triangle A2
@@ -40,6 +40,14 @@ TextureImporter:
     21300070: Breathe Triangle C
     21300072: Breathe Rombus A
     21300074: Breathe Woman
+    21300076: Eclipse Triangle A
+    21300078: Eclipse Triangle B
+    21300080: Eclipse Triangle C
+    21300082: Eclipse Triangle E
+    21300084: Eclipse Square A
+    21300086: Eclipse Triangle D
+    21300088: Eclipse Triangle F
+    21300090: Eclipse Triangle G
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -582,13 +590,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Camel
+      name: Eclipse Camel
       rect:
         serializedVersion: 2
-        x: 64
-        y: 656
-        width: 125
-        height: 126
+        x: 944
+        y: 468
+        width: 128
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,7 +654,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 528
+        y: 527
         width: 64
         height: 32
       alignment: 2
@@ -850,13 +858,173 @@ TextureImporter:
         width: 88
         height: 177
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: ed899d8cddae18546a7f5ce3cdc60906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse Triangle A
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 226
+        width: 16
+        height: 32
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78fac40aaaf99e42a501a503fe1b200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse Triangle B
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 197
+        width: 32
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3261af031f275449b5ea46f9108d189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse Triangle C
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 209
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ce4657ea0600e4a8b55d995cf579ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse Triangle E
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 236
+        width: 32
+        height: 16
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d08d6ad47841b84dadc8fc759c8c775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse Square A
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 216
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5c6612892efee4e96f8781b7c0712e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse Triangle D
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 177
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcbc7c4beadb8d48a63da566ccb35cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse Triangle F
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 138
+        width: 16
+        height: 32
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af83f9d2c5cf5bc4db6cf89e1939f29e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eclipse Triangle G
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 125
+        width: 32
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab955e85b5f8af4ab251636fa6a9237
       vertices: []
       indices: 
       edges: []
