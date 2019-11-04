@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide_callback:
+  on_collide:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 733212206}
@@ -5732,7 +5732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide_callback:
+  on_collide:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 733212206}
@@ -5922,7 +5922,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
-  shape_placed_callback:
+  on_shape_placed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2613720}
@@ -10539,7 +10539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide_callback:
+  on_collide:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 733212206}
@@ -10941,7 +10941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 5
-  fade_callback:
+  on_fade:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -15529,7 +15529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 5
-  fade_callback:
+  on_fade:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -15850,7 +15850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide_callback:
+  on_collide:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 733212206}

@@ -10,7 +10,7 @@ using UnityEditor;
 public class SelectManager : MonoBehaviour {
     public GUIStyle gizmo_style = new GUIStyle();
 
-    public UnityEvent shape_placed_callback;
+    public UnityEvent on_shape_placed;
 
     private Shape active_shape = null;
 
@@ -51,7 +51,7 @@ public class SelectManager : MonoBehaviour {
         /* ================================================================= */
         active_shape = null;
         /* ================================================================= */
-        shape_placed_callback.Invoke();
+        on_shape_placed.Invoke();
     }
 
     void OnDrawGizmos() {

@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class FadeEffect : MonoBehaviour {
     public float duration = 5;
 
-    public UnityEvent fade_callback;
+    public UnityEvent on_fade;
 
     private bool interrupted;
     IEnumerator Start() {
@@ -26,7 +26,7 @@ public class FadeEffect : MonoBehaviour {
         } while (elapsed_time / duration < 1 && !interrupted);
         /* ==================================================== */
         renderer.color = b;
-        fade_callback.Invoke();
+        on_fade.Invoke();
         gameObject.SetActive(false);
     }
 
