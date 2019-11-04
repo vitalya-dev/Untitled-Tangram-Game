@@ -13,15 +13,15 @@ public class GameLogic : MonoBehaviour {
 
     public int target_shape_hash = 0;
 
-    public UnityEvent win_callback;
+    public UnityEvent on_win;
 
-    public UnityEvent fail_callback;
+    public UnityEvent on_fail;
 
     public void shape_placed() {
         if (is_it_win())
-            win_callback.Invoke();
+            on_win.Invoke();
         if (is_it_fail())
-            fail_callback.Invoke();
+            on_fail.Invoke();
     }
 
     public void debug(string message) {

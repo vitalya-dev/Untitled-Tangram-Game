@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapes: {fileID: 170201900}
   target_shape_hash: 105000
-  win_callback:
+  on_win:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2613720}
@@ -173,7 +173,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  fail_callback:
+  on_fail:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2613720}
@@ -2868,12 +2868,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9515c79161c24dd46baeb3afe4fa9f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lmb_callback:
+  on_lmb:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: MouseUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  rmb_callback:
+  on_rmb:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1177462960}
@@ -16099,12 +16099,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9515c79161c24dd46baeb3afe4fa9f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lmb_callback:
+  on_lmb:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: MouseUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  rmb_callback:
+  on_rmb:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1430605588}
