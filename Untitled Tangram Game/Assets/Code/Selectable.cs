@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class SelectUnityEvent : UnityEvent<Selectable, Vector2> { }
 
 public class Selectable : MonoBehaviour {
-    public SelectUnityEvent select_callback = new SelectUnityEvent();
+    public SelectUnityEvent on_select = new SelectUnityEvent();
 
     // Update is called once per frame
     void Update() {
@@ -21,6 +21,6 @@ public class Selectable : MonoBehaviour {
     }
 
     public virtual void select(Vector2 mouse_position) {
-        select_callback.Invoke(this, mouse_position);
+        on_select.Invoke(this, mouse_position);
     }
 }
