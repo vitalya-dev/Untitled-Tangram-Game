@@ -16,6 +16,17 @@ public class LevelManager : MonoBehaviour {
             GlobalVariables.attempts += 1;
             Scene current_scene = SceneManager.GetActiveScene();
             SceneManager.LoadSceneAsync(current_scene.buildIndex);
+        } else {
+            SceneManager.LoadSceneAsync(0);
+            /* ==================================== */
+            GlobalVariables.attempts = 0;
         }
+    }
+
+    public void next_level() {
+        GlobalVariables.attempts = 0;
+        /* ==================================== */
+        Scene current_scene = SceneManager.GetActiveScene();
+        SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
     }
 }
