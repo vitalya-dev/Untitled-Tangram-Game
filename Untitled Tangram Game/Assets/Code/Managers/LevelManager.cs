@@ -27,6 +27,9 @@ public class LevelManager : MonoBehaviour {
         GlobalVariables.attempts = 0;
         /* ==================================== */
         Scene current_scene = SceneManager.GetActiveScene();
-        SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
+        if (current_scene.buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
+            SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
+        else 
+            SceneManager.LoadSceneAsync(0);
     }
 }
