@@ -10,6 +10,7 @@ public class HighlightEffect : MonoBehaviour {
     void Start() {
         normal_color = GetComponent<SpriteRenderer>().color;
     }
+    
     public void highlight(bool value) {
         GetComponent<SpriteRenderer>().color = value ? highlight_color : normal_color;
     }
