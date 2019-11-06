@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
+public class TimerUnityEvent : UnityEvent<float> { }
+
 public class Timer : MonoBehaviour {
     public UnityEvent on_start = new UnityEvent();
     public UnityEvent on_finish = new UnityEvent();
-    public UnityEvent on_ticktack = new UnityEvent();
+    public TimerUnityEvent on_ticktack = new TimerUnityEvent();
 
     public int sec = 0;
 
@@ -17,9 +20,11 @@ public class Timer : MonoBehaviour {
     }
 
     private IEnumerator timer(int s) {
-        for (int i = 0; i < s; i++) {
-            on_ticktack.Invoke();
-            yield return new WaitForSeconds(1f);
+        float time_goes_by = 0;
+        while (time_goes_by <= s) {
+            on_ticktack.Invoke(time_goes_by);
+            time_goes_by += Time.deltaTime;
+            yield return null;
         }
         on_finish.Invoke();
     }
