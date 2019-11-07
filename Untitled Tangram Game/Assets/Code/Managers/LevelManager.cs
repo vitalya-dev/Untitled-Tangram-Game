@@ -11,25 +11,33 @@ public class LevelManager : MonoBehaviour {
         level_start.Invoke();
     }
 
+    private AsyncOperation level_loading = null;
+
     public void level_restart() {
+        if (level_loading != null && !level_loading.isDone)
+            return;
+        /* ==================================== */
         if (GlobalVariables.attempts < GlobalVariables.max_attempts) {
             GlobalVariables.attempts += 1;
             Scene current_scene = SceneManager.GetActiveScene();
-            SceneManager.LoadSceneAsync(current_scene.buildIndex);
+            level_loading = SceneManager.LoadSceneAsync(current_scene.buildIndex);
         } else {
-            SceneManager.LoadSceneAsync(0);
+            level_loading = SceneManager.LoadSceneAsync(0);
             /* ==================================== */
             GlobalVariables.attempts = 0;
         }
     }
 
     public void next_level() {
+        if (level_loading != null && !level_loading.isDone)
+            return;
+        /* ==================================== */
         GlobalVariables.attempts = 0;
         /* ==================================== */
         Scene current_scene = SceneManager.GetActiveScene();
         if (current_scene.buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
-            SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
-        else 
-            SceneManager.LoadSceneAsync(0);
+            level_loading = SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
+        else
+            level_loading = SceneManager.LoadSceneAsync(0);
     }
 }
