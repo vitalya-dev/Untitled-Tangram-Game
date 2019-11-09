@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour {
             Scene current_scene = SceneManager.GetActiveScene();
             level_loading = SceneManager.LoadSceneAsync(current_scene.buildIndex);
         } else {
-            level_loading = SceneManager.LoadSceneAsync(0);
+            level_loading = SceneManager.LoadSceneAsync(1);
             /* ==================================== */
             GlobalVariables.attempts = 0;
         }
@@ -38,6 +38,6 @@ public class LevelManager : MonoBehaviour {
         if (current_scene.buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
             level_loading = SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
         else
-            level_loading = SceneManager.LoadSceneAsync(0);
+            level_loading = SceneManager.LoadSceneAsync(1);
     }
 }
