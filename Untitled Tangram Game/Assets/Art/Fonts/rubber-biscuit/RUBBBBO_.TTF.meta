@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 6ce38f8ed9bf804438d0f3b851301980
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Rubber Biscuit
+  fontNames:
+  - Rubber Biscuit
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5d0dc618ef6a0ec4ba9162e53e11fb87, type: 3}
+  - {fileID: 12800000, guid: 64319b7aa4ac134418848628a546f3d1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
