@@ -17,6 +17,13 @@ public class LevelManager : MonoBehaviour {
         if (level_loading != null && !level_loading.isDone)
             return;
         /* ==================================== */
+        foreach (var sound in FindObjectsOfType<AudioSource>())
+            if (!sound.GetComponent<DontDestroy>() && sound.isPlaying) {
+                sound.transform.parent = null;
+                DontDestroyOnLoad(sound.gameObject);
+                Destroy(sound.gameObject, 2.0f);
+            }
+        /* ==================================== */
         if (GlobalVariables.attempts < GlobalVariables.max_attempts) {
             GlobalVariables.attempts += 1;
             Scene current_scene = SceneManager.GetActiveScene();
@@ -31,6 +38,13 @@ public class LevelManager : MonoBehaviour {
     public void next_level() {
         if (level_loading != null && !level_loading.isDone)
             return;
+        /* ==================================== */
+        foreach (var sound in FindObjectsOfType<AudioSource>())
+            if (!sound.GetComponent<DontDestroy>() && sound.isPlaying) {
+                sound.transform.parent = null;
+                DontDestroyOnLoad(sound.gameObject);
+                Destroy(sound.gameObject, 2.0f);
+            }
         /* ==================================== */
         GlobalVariables.attempts = 0;
         /* ==================================== */
