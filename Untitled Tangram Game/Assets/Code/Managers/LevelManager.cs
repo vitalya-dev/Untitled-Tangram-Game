@@ -35,9 +35,16 @@ public class LevelManager : MonoBehaviour {
         }
     }
 
-    public void next_level() {
+    public void next_level(float delay) {
+        StartCoroutine(__next_level(delay));
+    }
+
+    private IEnumerator __next_level(float delay) {
         if (level_loading != null && !level_loading.isDone)
-            return;
+            yield break;
+        else
+            yield return new WaitForSeconds(delay);
+            
         /* ==================================== */
         foreach (var sound in FindObjectsOfType<AudioSource>())
             if (!sound.GetComponent<DontDestroy>() && sound.isPlaying) {
