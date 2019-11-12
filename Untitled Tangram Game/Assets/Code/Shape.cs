@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class CollideUnityEvent : UnityEvent<GameObject, GameObject> { }
 
 public class Shape : MonoBehaviour {
-    public CollideUnityEvent on_collide = new CollideUnityEvent();
+    public bool collided = false;
     public GameObject pivot;
     public List<GameObject> vertices;
 
@@ -25,6 +25,6 @@ public class Shape : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D col) {
-        on_collide.Invoke(gameObject, col.gameObject);
+        collided = true;
     }
 }

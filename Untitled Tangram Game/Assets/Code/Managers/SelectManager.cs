@@ -11,6 +11,7 @@ public class SelectManager : MonoBehaviour {
     public GUIStyle gizmo_style = new GUIStyle();
 
     public UnityEvent on_shape_placed;
+    public UnityEvent on_shape_collided;
 
     private Shape active_shape = null;
 
@@ -22,8 +23,11 @@ public class SelectManager : MonoBehaviour {
     }
 
     public void field_selected(Selectable field, Vector2 mouse_position) {
+        StartCoroutine(__field_selected(field, mouse_position));
+    }
+    private IEnumerator __field_selected(Selectable field, Vector2 mouse_position) {
         if (!active_shape)
-            return;
+            yield break;
         /* ================================================================= */
         float size = 1.0f;
         if (field.GetComponent<BoxCollider2D>()) {
@@ -32,7 +36,7 @@ public class SelectManager : MonoBehaviour {
         /* ================================================================= */
         Vector2 offset = mouse_position - (Vector2)field.transform.position;
         if (offset.magnitude < 0.2)
-            return;
+            yield break;
         else {
             offset.x = Mathf.Sign(offset.x);
             offset.y = Mathf.Sign(offset.y);
@@ -49,9 +53,14 @@ public class SelectManager : MonoBehaviour {
         /* ================================================================= */
         active_shape.pivot.SetActive(false);
         /* ================================================================= */
-        active_shape = null;
+        yield return null;
         /* ================================================================= */
-        on_shape_placed.Invoke();
+        if (active_shape.collided)
+            on_shape_collided.Invoke();
+        else
+            on_shape_placed.Invoke();
+        /* ================================================================= */
+        active_shape = null;
     }
 
     void OnDrawGizmos() {

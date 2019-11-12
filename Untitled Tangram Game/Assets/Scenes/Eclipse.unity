@@ -341,7 +341,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 82843017}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &42085028
 MonoBehaviour:
@@ -383,7 +383,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 637591872}
-  - {fileID: 733212207}
   - {fileID: 1177462961}
   - {fileID: 42085027}
   - {fileID: 1199613280}
@@ -2870,33 +2869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_collide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 733212206}
-        m_MethodName: collided
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1177462960}
-        m_MethodName: level_restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  collided: 0
   pivot: {fileID: 0}
   vertices: []
 --- !u!114 &352852919
@@ -5620,33 +5593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_collide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 733212206}
-        m_MethodName: collided
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1177462960}
-        m_MethodName: level_restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  collided: 0
   pivot: {fileID: 0}
   vertices: []
 --- !u!114 &558836804
@@ -6156,33 +6103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_collide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 733212206}
-        m_MethodName: collided
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1177462960}
-        m_MethodName: level_restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  collided: 0
   pivot: {fileID: 0}
   vertices: []
 --- !u!114 &588458156
@@ -6598,6 +6519,22 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 587545649}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  on_shape_collided:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1177462960}
+        m_MethodName: level_restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7158,49 +7095,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &733212205
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 733212207}
-  - component: {fileID: 733212206}
-  m_Layer: 0
-  m_Name: CollisionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &733212206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733212205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f5f9f06872bdb3458c935acbf88788c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &733212207
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733212205}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.82, y: 6.96, z: -8.392146}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 82843017}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &751952197
 GameObject:
   m_ObjectHideFlags: 0
@@ -7976,33 +7870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_collide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 733212206}
-        m_MethodName: collided
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1177462960}
-        m_MethodName: level_restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  collided: 0
   pivot: {fileID: 0}
   vertices: []
 --- !u!114 &810456582
@@ -10510,33 +10378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_collide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 733212206}
-        m_MethodName: collided
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1177462960}
-        m_MethodName: level_restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  collided: 0
   pivot: {fileID: 0}
   vertices: []
 --- !u!114 &1072953138
@@ -11459,7 +11301,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 82843017}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199613279
 GameObject:
@@ -11490,7 +11332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 82843017}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1199613281
 MonoBehaviour:
@@ -13733,33 +13575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_collide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 733212206}
-        m_MethodName: collided
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1177462960}
-        m_MethodName: level_restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  collided: 0
   pivot: {fileID: 0}
   vertices: []
 --- !u!114 &1340216640
@@ -16197,33 +16013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_collide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 733212206}
-        m_MethodName: collided
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1177462960}
-        m_MethodName: level_restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  collided: 0
   pivot: {fileID: 0}
   vertices: []
 --- !u!114 &1536941790
@@ -20839,33 +20629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65a311206fa088459fcb4ad1d72a307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_collide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 733212206}
-        m_MethodName: collided
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1177462960}
-        m_MethodName: level_restart
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: CollideUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+  collided: 0
   pivot: {fileID: 0}
   vertices: []
 --- !u!114 &2146793262
