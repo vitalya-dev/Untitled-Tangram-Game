@@ -13,9 +13,19 @@ public class LevelManager : MonoBehaviour {
 
     private AsyncOperation level_loading = null;
 
-    public void level_restart() {
+     public void level_restart() {
+        level_restart(0);
+    }
+
+    public void level_restart(float delay) {
+        StartCoroutine(__level_restart(delay));
+    }
+
+    private IEnumerator __level_restart(float delay) {
         if (level_loading != null && !level_loading.isDone)
-            return;
+            yield break;
+        else
+            yield return new WaitForSeconds(delay);
         /* ==================================== */
         foreach (var sound in FindObjectsOfType<AudioSource>())
             if (!sound.GetComponent<DontDestroy>() && sound.isPlaying) {
@@ -44,7 +54,7 @@ public class LevelManager : MonoBehaviour {
             yield break;
         else
             yield return new WaitForSeconds(delay);
-            
+
         /* ==================================== */
         foreach (var sound in FindObjectsOfType<AudioSource>())
             if (!sound.GetComponent<DontDestroy>() && sound.isPlaying) {
