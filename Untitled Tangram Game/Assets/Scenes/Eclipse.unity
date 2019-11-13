@@ -2783,6 +2783,7 @@ GameObject:
   - component: {fileID: 352852918}
   - component: {fileID: 352852917}
   - component: {fileID: 352852916}
+  - component: {fileID: 352852921}
   m_Layer: 0
   m_Name: Eclipse Triangle G
   m_TagString: Shape
@@ -2970,6 +2971,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &352852921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352852914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &358159000
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,6 +5522,7 @@ GameObject:
   - component: {fileID: 558836803}
   - component: {fileID: 558836802}
   - component: {fileID: 558836801}
+  - component: {fileID: 558836806}
   m_Layer: 0
   m_Name: Eclipse Triangle A
   m_TagString: Shape
@@ -5694,6 +5710,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &558836806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558836799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &564141376
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,6 +6047,7 @@ GameObject:
   - component: {fileID: 588458155}
   - component: {fileID: 588458154}
   - component: {fileID: 588458153}
+  - component: {fileID: 588458158}
   m_Layer: 0
   m_Name: Eclipse Triangle F
   m_TagString: Shape
@@ -6204,6 +6235,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &588458158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588458151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &610325688
 GameObject:
   m_ObjectHideFlags: 0
@@ -7795,6 +7840,7 @@ GameObject:
   - component: {fileID: 810456581}
   - component: {fileID: 810456580}
   - component: {fileID: 810456579}
+  - component: {fileID: 810456584}
   m_Layer: 0
   m_Name: Eclipse Triangle B
   m_TagString: Shape
@@ -7982,6 +8028,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &810456584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810456577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &812937240
 GameObject:
   m_ObjectHideFlags: 0
@@ -10303,6 +10363,7 @@ GameObject:
   - component: {fileID: 1072953137}
   - component: {fileID: 1072953136}
   - component: {fileID: 1072953135}
+  - component: {fileID: 1072953140}
   m_Layer: 0
   m_Name: Eclipse Triangle D
   m_TagString: Shape
@@ -10490,6 +10551,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1072953140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072953133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &1081056303
 GameObject:
   m_ObjectHideFlags: 0
@@ -13500,6 +13575,7 @@ GameObject:
   - component: {fileID: 1340216639}
   - component: {fileID: 1340216638}
   - component: {fileID: 1340216637}
+  - component: {fileID: 1340216642}
   m_Layer: 0
   m_Name: Eclipse Triangle E
   m_TagString: Shape
@@ -13687,6 +13763,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1340216642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340216635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &1342064363
 GameObject:
   m_ObjectHideFlags: 0
@@ -15938,6 +16028,7 @@ GameObject:
   - component: {fileID: 1536941789}
   - component: {fileID: 1536941788}
   - component: {fileID: 1536941787}
+  - component: {fileID: 1536941792}
   m_Layer: 0
   m_Name: Eclipse Triangle C
   m_TagString: Shape
@@ -16125,6 +16216,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1536941792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536941785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &1591497382
 GameObject:
   m_ObjectHideFlags: 0
@@ -20552,6 +20657,7 @@ GameObject:
   - component: {fileID: 2146793261}
   - component: {fileID: 2146793259}
   - component: {fileID: 2146793260}
+  - component: {fileID: 2146793264}
   m_Layer: 0
   m_Name: Eclipse Square A
   m_TagString: Shape
@@ -20741,3 +20847,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2146793264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146793257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}

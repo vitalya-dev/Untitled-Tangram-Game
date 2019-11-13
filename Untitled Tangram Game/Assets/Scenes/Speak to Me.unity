@@ -1530,6 +1530,7 @@ GameObject:
   - component: {fileID: 155086451}
   - component: {fileID: 155086450}
   - component: {fileID: 155086449}
+  - component: {fileID: 155086454}
   m_Layer: 0
   m_Name: Speak To Me Triangle B
   m_TagString: Shape
@@ -1717,6 +1718,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &155086454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155086447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &156721940
 GameObject:
   m_ObjectHideFlags: 0
@@ -6110,6 +6125,7 @@ GameObject:
   - component: {fileID: 525037856}
   - component: {fileID: 525037855}
   - component: {fileID: 525037858}
+  - component: {fileID: 525037859}
   m_Layer: 0
   m_Name: Speak To Me Triangle A
   m_TagString: Shape
@@ -6297,6 +6313,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &525037859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525037852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &525693143
 GameObject:
   m_ObjectHideFlags: 0
@@ -9634,6 +9664,7 @@ GameObject:
   - component: {fileID: 867150960}
   - component: {fileID: 867150959}
   - component: {fileID: 867150958}
+  - component: {fileID: 867150963}
   m_Layer: 0
   m_Name: Speak To Me Triangle C
   m_TagString: Shape
@@ -9821,6 +9852,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &867150963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867150956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &869879539
 GameObject:
   m_ObjectHideFlags: 0
@@ -18541,6 +18586,7 @@ GameObject:
   - component: {fileID: 2146793262}
   - component: {fileID: 2146793260}
   - component: {fileID: 2146793259}
+  - component: {fileID: 2146793264}
   m_Layer: 0
   m_Name: Speak To Me Triangle D
   m_TagString: Shape
@@ -18728,3 +18774,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2146793264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146793257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}

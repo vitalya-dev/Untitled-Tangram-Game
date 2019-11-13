@@ -1092,6 +1092,7 @@ GameObject:
   - component: {fileID: 145637157}
   - component: {fileID: 145637156}
   - component: {fileID: 145637155}
+  - component: {fileID: 145637160}
   m_Layer: 0
   m_Name: Breathe Triangle A
   m_TagString: Shape
@@ -1279,6 +1280,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &145637160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145637153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &151573083
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,6 +6602,7 @@ GameObject:
   - component: {fileID: 630281235}
   - component: {fileID: 630281234}
   - component: {fileID: 630281233}
+  - component: {fileID: 630281238}
   m_Layer: 0
   m_Name: Breathe Triangle C
   m_TagString: Shape
@@ -6774,6 +6790,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &630281238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630281231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &637591870
 GameObject:
   m_ObjectHideFlags: 0
@@ -12273,6 +12303,7 @@ GameObject:
   - component: {fileID: 1346014938}
   - component: {fileID: 1346014937}
   - component: {fileID: 1346014936}
+  - component: {fileID: 1346014941}
   m_Layer: 0
   m_Name: Breathe Triangle B
   m_TagString: Shape
@@ -12460,6 +12491,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1346014941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346014934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
 --- !u!1 &1393827059
 GameObject:
   m_ObjectHideFlags: 0
@@ -18480,6 +18525,7 @@ GameObject:
   - component: {fileID: 2146793261}
   - component: {fileID: 2146793259}
   - component: {fileID: 2146793260}
+  - component: {fileID: 2146793264}
   m_Layer: 0
   m_Name: Breathe Rombus A
   m_TagString: Shape
@@ -18669,3 +18715,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2146793264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146793257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4bee33eb1f6ba44ba9d065ff836a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightning_prefab: {fileID: 5113188922948714948, guid: 5c5f69af883e8694ca88851c1407cd4f,
+    type: 3}
