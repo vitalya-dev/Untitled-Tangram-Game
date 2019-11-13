@@ -53,7 +53,9 @@ public class SelectManager : MonoBehaviour {
         /* ================================================================= */
         active_shape.pivot.SetActive(false);
         /* ================================================================= */
-        yield return new WaitForSeconds(0.1f);
+        Physics2D.autoSimulation = false;
+        Physics2D.Simulate(Time.fixedDeltaTime);
+        Physics2D.autoSimulation = true;
         /* ================================================================= */
         if (active_shape.collided)
             on_shape_collided.Invoke();
