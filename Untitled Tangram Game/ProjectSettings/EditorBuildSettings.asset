@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
+    path: Assets/Scenes/Menu.unity
     guid: f4015b437d0ed1d45a2ffc74d60a95cd
   - enabled: 1
-    path: Assets/Scenes/Speak to Me.unity
+    path: Assets/Scenes/Dark Side Of The Moon/Speak to Me.unity
     guid: ccc9513558e0d534d9de01ad2a868a8e
   - enabled: 1
-    path: Assets/Scenes/Breathe.unity
+    path: Assets/Scenes/Dark Side Of The Moon/Breathe.unity
     guid: 4647b17c32ed32d429df8435e4718046
   - enabled: 1
-    path: Assets/Scenes/Eclipse.unity
+    path: Assets/Scenes/Dark Side Of The Moon/Eclipse.unity
     guid: 94a6b491c453b5a40a273a4edf595ed3
   m_configObjects: {}
