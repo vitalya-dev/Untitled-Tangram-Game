@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class Sentence {
@@ -14,6 +15,7 @@ public class DialogueManager : MonoBehaviour {
     public Canvas ui;
     public Vector2 start_position;
     public GameObject message_prefab;
+    public UnityEvent on_finish;
     public Sentence[] sentences;
 
     IEnumerator Start() {
@@ -30,6 +32,7 @@ public class DialogueManager : MonoBehaviour {
             text_ui.transform.Find("Avatar").GetComponent<Image>().SetNativeSize();
             yield return new WaitForSeconds(1.0f);
         }
+        on_finish.Invoke();
     }
 
 }
