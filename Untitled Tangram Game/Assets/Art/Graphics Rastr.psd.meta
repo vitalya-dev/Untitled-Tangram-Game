@@ -57,6 +57,9 @@ TextureImporter:
     21300104: Game Field Bottom Middle
     21300106: Game Field Bottom Right
     21300108: Game Field Middle Right
+    21300110: Dasha
+    21300112: Masha
+    21300114: Reaper
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1214,6 +1217,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a1428ffe8041ae649a3d12f9cf8eddac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dasha
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 169
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348ca83fd6298b2498a609c1a45d2dfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Masha
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 169
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840b1916918bb4048a2946fa10fa322c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 103
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09a713f5d2ef4c4fa53ceeec26d5371
       vertices: []
       indices: 
       edges: []
