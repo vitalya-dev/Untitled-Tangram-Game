@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour {
     public UnityEvent level_start;
 
+    public string open_level;
+
     void Start() {
         level_start.Invoke();
     }
@@ -23,7 +25,7 @@ public class LevelManager : MonoBehaviour {
             Scene current_scene = SceneManager.GetActiveScene();
             StartCoroutine(level_load(current_scene.buildIndex, delay));
         } else {
-            StartCoroutine(level_load(1, delay));
+            StartCoroutine(level_load(-1, delay, open_level));
             GlobalVariables.attempts = 0;
         }
     }
@@ -38,7 +40,7 @@ public class LevelManager : MonoBehaviour {
             StartCoroutine(level_load(1, delay));
     }
 
-    private IEnumerator level_load(int index, float delay) {
+    private IEnumerator level_load(int index, float delay, string name = "") {
         if (level_loading != null && !level_loading.isDone)
             yield break;
         else
@@ -51,6 +53,9 @@ public class LevelManager : MonoBehaviour {
                 Destroy(sound.gameObject, sound.clip.length);
             }
         /* ==================================== */
-        level_loading = SceneManager.LoadSceneAsync(index);
+        if (name == "")
+            level_loading = SceneManager.LoadSceneAsync(index);
+        else
+            level_loading = SceneManager.LoadSceneAsync(name);
     }
 }

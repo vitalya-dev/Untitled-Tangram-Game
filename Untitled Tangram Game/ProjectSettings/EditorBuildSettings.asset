@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Dark Side Of The Moon/Intro.unity
     guid: 03dade302ac9eac42b7a50680f0940b7
   - enabled: 1
-    path: Assets/Scenes/Dark Side Of The Moon/Speak to Me.unity
+    path: Assets/Scenes/Dark Side Of The Moon/Speak To Me.unity
     guid: ccc9513558e0d534d9de01ad2a868a8e
   - enabled: 1
     path: Assets/Scenes/Dark Side Of The Moon/Breathe.unity
