@@ -342,16 +342,14 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   sentences:
-  - message: "\u041F\u0440\u043E\u0438\u0433\u0440\u0430\u0435\u0448\u044C - \u043F\u043E\u0439\u0434\u0435\u0448\u044C
+  - letters: "\u041F\u0440\u043E\u0438\u0433\u0440\u0430\u0435\u0448\u044C - \u043F\u043E\u0439\u0434\u0435\u0448\u044C
       \u0441\u043E \u043C\u043D\u043E\u0439.\n\u041F\u043E\u0431\u0435\u0434\u0438\u0448\u044C
       - \u043E\u0441\u0442\u0430\u043D\u0435\u0448\u044C\u0441\u044F."
     avatar: {fileID: 21300114, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
-  - message: "\u0413\u043E\u0442\u043E\u0432\u0430?"
+  - letters: "\u0413\u043E\u0442\u043E\u0432\u0430?"
     avatar: {fileID: 21300114, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
-  - message: "\u0413\u043E\u0442\u043E\u0432\u0430!"
-    avatar: {fileID: 21300110, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
-  - message: "\u041C\u044F\u0443!"
-    avatar: {fileID: 21300112, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
+  - letters: "\u0413\u043E\u0442\u043E\u0432\u0430!"
+    avatar: {fileID: 21300116, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
 --- !u!4 &1171720312
 Transform:
   m_ObjectHideFlags: 0
