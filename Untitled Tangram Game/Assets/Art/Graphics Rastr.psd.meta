@@ -61,6 +61,7 @@ TextureImporter:
     21300112: Masha
     21300114: Reaper
     21300116: Dasha And Masha
+    21300118: Death Hand
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1291,13 +1292,33 @@ TextureImporter:
         width: 41
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 8f3e7844297bac64295622692cbce275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death Hand
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 402
+        width: 51
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e45dbbd8d6ae7458d6fa06a681d55a
       vertices: []
       indices: 
       edges: []
