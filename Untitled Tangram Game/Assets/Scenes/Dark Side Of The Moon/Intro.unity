@@ -464,6 +464,7 @@ MonoBehaviour:
   ui: {fileID: 1752405178}
   sentence_go: {fileID: 5904940183752049597, guid: b5627ac843dda204396463253823b03d,
     type: 3}
+  delay: 1.25
   position: {x: -160, y: 120}
   sentences:
   - text: "\u041F\u0440\u043E\u0438\u0433\u0440\u0430\u0435\u0448\u044C - \u043F\u043E\u0439\u0434\u0435\u0448\u044C

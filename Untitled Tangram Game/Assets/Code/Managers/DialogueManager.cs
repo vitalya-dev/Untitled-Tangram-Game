@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour {
     public Canvas ui;
     public GameObject sentence_go;
 
+    public float delay;
+
     public Vector2 position;
 
     public Sentence[] sentences;
@@ -22,7 +24,9 @@ public class DialogueManager : MonoBehaviour {
     public UnityEvent on_finish;
 
     IEnumerator Start() {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(delay);
+
+        List<Text> sentence_ui_list = new List<Text>();
         for (int i = 0; i < sentences.Length; i++) {
             /* ==================================================== */
             Text sentence_ui = Instantiate(sentence_go, Vector3.zero, Quaternion.identity, ui.transform).GetComponent<Text>();
@@ -33,18 +37,24 @@ public class DialogueManager : MonoBehaviour {
             );
             sentence_ui.transform.Find("Avatar").GetComponent<Image>().sprite = sentences[i].avatar;
             sentence_ui.transform.Find("Avatar").GetComponent<Image>().SetNativeSize();
-            yield return new WaitForSeconds(1.0f);
+            sentence_ui_list.Add(sentence_ui);
+            yield return new WaitForSeconds(delay);
             /* ==================================================== */
             foreach (var letter in sentences[i].text) {
                 sentence_ui.text += letter;
                 if (letter == '.' && sentence_ui.text.Length < sentences[i].text.Trim().Length)
-                    yield return new WaitForSeconds(1.0f);
+                    yield return new WaitForSeconds(delay);
                 else
                     yield return null;
             }
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(delay);
             /* ==================================================== */
         }
         on_finish.Invoke();
+        /* ==================================================== */
+        foreach (var sentence_ui in sentence_ui_list) {
+            Destroy(sentence_ui.gameObject, 2f);
+        }
+        /* ==================================================== */
     }
 }
