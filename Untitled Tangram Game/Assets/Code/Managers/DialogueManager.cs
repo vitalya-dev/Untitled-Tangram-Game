@@ -4,13 +4,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-[System.Serializable]
-public class Sentence {
-    [TextArea]
-    public string text;
-    public Sprite avatar;
-}
-
 public class DialogueManager : MonoBehaviour {
     public Canvas ui;
     public GameObject sentence_go;
