@@ -25,9 +25,11 @@
              GlobalVariables.attempts += 1;
              Scene current_scene = SceneManager.GetActiveScene();
              StartCoroutine(level_load(current_scene.buildIndex, delay));
+             GlobalVariables.last_shot = "Success";
          } else {
              StartCoroutine(level_load(open_level, delay));
              GlobalVariables.attempts = 0;
+             GlobalVariables.last_shot = "Fail";
          }
      }
 
@@ -39,6 +41,7 @@
              StartCoroutine(level_load(current_scene.buildIndex + 1, delay));
          else
              StartCoroutine(level_load(1, delay));
+         GlobalVariables.last_shot = "Success";
      }
 
      private IEnumerator level_load<T>(T index, float delay) {
@@ -59,6 +62,5 @@
          else if (index is string)
              level_loading = SceneManager.LoadSceneAsync(Convert.ToString(index));
      }
-
 
  }

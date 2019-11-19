@@ -9399,7 +9399,7 @@ GameObject:
   - component: {fileID: 846026391}
   - component: {fileID: 846026392}
   m_Layer: 0
-  m_Name: DialogueManager
+  m_Name: FailDialogManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9428,7 +9428,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 846026390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2510f61c61673b5428af64a8977b28b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 891b1d697df280645b574e3e2118add0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1752405178}
@@ -9437,22 +9437,11 @@ MonoBehaviour:
   delay: 0
   position: {x: -200, y: 120}
   sentences:
-  - text: "\u0427\u0435\u0440\u0442!"
+  - text: "\u0427\u0435\u0440\u0442"
     avatar: {fileID: 21300110, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
   on_finish:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: next_level
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 2
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &855228633
