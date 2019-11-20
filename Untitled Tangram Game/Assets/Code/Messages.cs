@@ -26,7 +26,7 @@ public class Messages : MonoBehaviour {
         yield return new WaitForSeconds(delay);
 
         /* ==================================================== */
-        Text sentence_ui = Instantiate(sentence_go, Vector3.zero, Quaternion.identity, ui.transform).GetComponent<Text>();
+        Image sentence_ui = Instantiate(sentence_go, Vector3.zero, Quaternion.identity, ui.transform).GetComponent<Image>();
         sentence_ui.rectTransform.localPosition = new Vector3(
             position.x,
             position.y,
@@ -36,9 +36,10 @@ public class Messages : MonoBehaviour {
         sentence_ui.transform.Find("Avatar").GetComponent<Image>().SetNativeSize();
         yield return new WaitForSeconds(delay);
         /* ==================================================== */
+        Text text_ui = sentence_ui.transform.Find("Text").GetComponent<Text>();
         foreach (var letter in sentence.text) {
-            sentence_ui.text += letter;
-            if (letter == '.' && sentence_ui.text.Length < sentence.text.Trim().Length)
+            text_ui.text += letter;
+            if (letter == '.' && text_ui.text.Length < sentence.text.Trim().Length)
                 yield return new WaitForSeconds(delay);
             else
                 yield return null;
