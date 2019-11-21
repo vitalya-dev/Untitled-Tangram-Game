@@ -62,6 +62,7 @@ TextureImporter:
     21300114: Reaper
     21300116: Dasha And Masha
     21300118: Death Hand
+    21300120: Cursor
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1319,6 +1320,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 24e45dbbd8d6ae7458d6fa06a681d55a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cursor
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 249
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcbc3f8eca0aa04780b625fb7eb7c90
       vertices: []
       indices: 
       edges: []
