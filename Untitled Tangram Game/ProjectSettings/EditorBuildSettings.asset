@@ -9,10 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: f4015b437d0ed1d45a2ffc74d60a95cd
   - enabled: 1
-    path: Assets/Scenes/The Piper at the Gates of Dawn/Intro.unity
+    path: Assets/Scenes/The Piper at the Gates of Dawn/The Piper at the Gates of Dawn
+      Intro.unity
     guid: 689ee79b2bb7cba469177f8d5ff5d6af
   - enabled: 1
-    path: Assets/Scenes/Dark Side Of The Moon/Intro.unity
+    path: Assets/Scenes/Dark Side Of The Moon/Dark Side Of The Moon Intro.unity
     guid: 03dade302ac9eac42b7a50680f0940b7
   - enabled: 1
     path: Assets/Scenes/Dark Side Of The Moon/Speak to Me.unity

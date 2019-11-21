@@ -40,7 +40,7 @@
              StartCoroutine(level_load(current_scene.buildIndex + 1, delay));
          else
              StartCoroutine(level_load(1, delay));
-         if (current_scene.name != "Intro")
+         if (!current_scene.name.EndsWith("Intro"))
              GlobalVariables.last_shot = "Success";
      }
 
