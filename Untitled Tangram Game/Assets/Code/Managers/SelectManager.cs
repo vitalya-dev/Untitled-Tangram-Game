@@ -14,12 +14,26 @@ public class SelectManager : MonoBehaviour {
     public UnityEvent on_shape_collided;
 
     private Shape active_shape = null;
+    private GameObject active_shadow = null;
+
+    void Start() {
+        active_shadow = new GameObject();
+        active_shadow.AddComponent<SpriteRenderer>();
+    }
+
+    void Update() {
+        active_shadow.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        active_shadow.transform.Translate(0, 0, 1, Space.Self);
+    }
 
     public void shape_selected(Selectable shape, Vector2 mouse_position) {
         if (active_shape)
             active_shape.pivot.SetActive(false);
         active_shape = shape.GetComponent<Shape>();
         active_shape.pivot.SetActive(true);
+         /* ================================================================= */
+        active_shadow.GetComponent<SpriteRenderer>().sprite = active_shape.GetComponent<SpriteRenderer>().sprite;
+        active_shadow.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0.5f);
     }
 
     public void field_selected(Selectable field, Vector2 mouse_position) {
@@ -63,6 +77,7 @@ public class SelectManager : MonoBehaviour {
             on_shape_placed.Invoke();
         /* ================================================================= */
         active_shape = null;
+        active_shadow.GetComponent<SpriteRenderer>().sprite = null;
     }
 
     void OnDrawGizmos() {
