@@ -48,15 +48,15 @@ TextureImporter:
     21300086: Eclipse Triangle D
     21300088: Eclipse Triangle F
     21300090: Eclipse Triangle G
-    21300092: Game Field Top Left
-    21300094: Game Field Top Right
-    21300096: Game Field Top Middle
-    21300098: Game Field Middle Left
-    21300100: Game Field Bottom Left
-    21300102: Game Field Middle
-    21300104: Game Field Bottom Middle
-    21300106: Game Field Bottom Right
-    21300108: Game Field Middle Right
+    21300092: Tile Top Left
+    21300094: Tile Top Right
+    21300096: Tile Top Middle
+    21300098: Tile Middle Left
+    21300100: Tile Bottom Left
+    21300102: Tile Middle
+    21300104: Tile Bottom Middle
+    21300106: Tile Bottom Right
+    21300108: Tile Middle Right
     21300110: Dasha
     21300112: Masha
     21300114: Reaper
@@ -1045,7 +1045,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Top Left
+      name: Tile Top Left
       rect:
         serializedVersion: 2
         x: 224
@@ -1065,7 +1065,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Top Right
+      name: Tile Top Right
       rect:
         serializedVersion: 2
         x: 256
@@ -1085,7 +1085,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Top Middle
+      name: Tile Top Middle
       rect:
         serializedVersion: 2
         x: 240
@@ -1105,7 +1105,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Middle Left
+      name: Tile Middle Left
       rect:
         serializedVersion: 2
         x: 224
@@ -1125,7 +1125,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Bottom Left
+      name: Tile Bottom Left
       rect:
         serializedVersion: 2
         x: 224
@@ -1145,7 +1145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Middle
+      name: Tile Middle
       rect:
         serializedVersion: 2
         x: 240
@@ -1165,7 +1165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Bottom Middle
+      name: Tile Bottom Middle
       rect:
         serializedVersion: 2
         x: 240
@@ -1185,7 +1185,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Bottom Right
+      name: Tile Bottom Right
       rect:
         serializedVersion: 2
         x: 256
@@ -1205,7 +1205,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game Field Middle Right
+      name: Tile Middle Right
       rect:
         serializedVersion: 2
         x: 256
