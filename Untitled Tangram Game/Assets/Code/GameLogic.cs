@@ -42,15 +42,15 @@ public class GameLogic : MonoBehaviour {
     }
 
     public int get_shape_hash() {
-        Vector3 hash_vec = Vector3.zero;
+        float hash = 0;
         for (int i = 1; i < shapes.transform.childCount; i++) {
             foreach (GameObject vertice in shapes.transform.GetChild(i).GetComponent<Shape>().vertices) {
-                hash_vec +=
+                hash +=
                     (shapes.transform.GetChild(0).GetComponent<Shape>().pivot.transform.position -
-                        vertice.transform.position) * 1000;
+                        vertice.transform.position).magnitude * 1000;
             }
         }
-        return (int)Mathf.Abs(hash_vec.x + hash_vec.y);
+        return (int)hash;
     }
 
 }
