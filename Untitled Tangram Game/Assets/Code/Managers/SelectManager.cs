@@ -31,7 +31,7 @@ public class SelectManager : MonoBehaviour {
             active_shape.pivot.SetActive(false);
         active_shape = shape.GetComponent<Shape>();
         active_shape.pivot.SetActive(true);
-         /* ================================================================= */
+        /* ================================================================= */
         active_shadow.GetComponent<SpriteRenderer>().sprite = active_shape.GetComponent<SpriteRenderer>().sprite;
         active_shadow.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0.5f);
     }
@@ -49,12 +49,8 @@ public class SelectManager : MonoBehaviour {
         }
         /* ================================================================= */
         Vector2 offset = mouse_position - (Vector2)field.transform.position;
-        if (offset.magnitude < 0.2)
-            yield break;
-        else {
-            offset.x = Mathf.Sign(offset.x);
-            offset.y = Mathf.Sign(offset.y);
-        }
+        offset.x = Mathf.Sign(offset.x);
+        offset.y = Mathf.Sign(offset.y);
         /* ================================================================= */
         Vector3 new_position = new Vector3();
         new_position.x = field.gameObject.transform.position.x + (size / 2) * offset.x;
