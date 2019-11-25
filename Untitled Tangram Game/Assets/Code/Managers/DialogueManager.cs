@@ -33,6 +33,8 @@ public class DialogueManager : MonoBehaviour {
             sentence_ui.transform.Find("Avatar").GetComponent<Image>().SetNativeSize();
             yield return new WaitForSeconds(delay);
             /* ==================================================== */
+            if (!GetComponent<AudioSource>().isPlaying)
+                GetComponent<AudioSource>().PlayOneShot(sentences[i].voice);
             Text text_ui = sentence_ui.transform.Find("Text").GetComponent<Text>();
             foreach (var letter in sentences[i].text) {
                 text_ui.text += letter;

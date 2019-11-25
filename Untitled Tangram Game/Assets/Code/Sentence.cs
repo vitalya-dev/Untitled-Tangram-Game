@@ -10,4 +10,5 @@ public class Sentence {
     [TextArea]
     public string text;
     public Sprite avatar;
+    public AudioClip voice;
 }
