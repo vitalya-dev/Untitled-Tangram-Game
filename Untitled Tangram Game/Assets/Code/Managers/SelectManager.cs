@@ -27,10 +27,10 @@ public class SelectManager : MonoBehaviour {
     }
 
     public void shape_selected(Selectable shape, Vector2 mouse_position) {
-        if (active_shape)
-            active_shape.pivot.SetActive(false);
+        // if (active_shape)
+        //     active_shape.pivot.SetActive(false);
         active_shape = shape.GetComponent<Shape>();
-        active_shape.pivot.SetActive(true);
+        // active_shape.pivot.SetActive(true);
         /* ================================================================= */
         active_shadow.GetComponent<SpriteRenderer>().sprite = active_shape.GetComponent<SpriteRenderer>().sprite;
         active_shadow.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0.5f);
@@ -61,7 +61,7 @@ public class SelectManager : MonoBehaviour {
         /* ================================================================= */
         active_shape.GetComponent<Selectable>().enabled = false;
         /* ================================================================= */
-        active_shape.pivot.SetActive(false);
+        // active_shape.pivot.SetActive(false);
         /* ================================================================= */
         Physics2D.autoSimulation = false;
         Physics2D.Simulate(Time.fixedDeltaTime);
