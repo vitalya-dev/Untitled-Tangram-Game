@@ -13,7 +13,7 @@ public class Messages : MonoBehaviour {
     public Vector2 position;
 
     public AudioSource voice;
-    
+
     public Sentence[] success_sentences;
     public Sentence[] failed_sentences;
 
@@ -38,12 +38,14 @@ public class Messages : MonoBehaviour {
         sentence_ui.transform.Find("Avatar").GetComponent<Image>().SetNativeSize();
         yield return new WaitForSeconds(delay);
         /* ==================================================== */
-        if (!voice.isPlaying) {
-            voice.PlayOneShot(sentence.voice);
-            voice.clip = sentence.voice;
-        }
         Text text_ui = sentence_ui.transform.Find("Text").GetComponent<Text>();
         foreach (var letter in sentence.text) {
+            /* ==================================================== */
+            if (!voice.isPlaying) {
+                voice.PlayOneShot(sentence.voice);
+                voice.clip = sentence.voice;
+            }
+            /* ==================================================== */
             text_ui.text += letter;
             if (letter == '.' && text_ui.text.Length < sentence.text.Trim().Length)
                 yield return new WaitForSeconds(delay);

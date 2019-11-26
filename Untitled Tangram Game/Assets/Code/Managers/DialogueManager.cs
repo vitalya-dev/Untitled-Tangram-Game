@@ -35,12 +35,14 @@ public class DialogueManager : MonoBehaviour {
             sentence_ui.transform.Find("Avatar").GetComponent<Image>().SetNativeSize();
             yield return new WaitForSeconds(delay);
             /* ==================================================== */
-            if (!voice.isPlaying) {
-                voice.PlayOneShot(sentences[i].voice);
-                voice.clip = sentences[i].voice;
-            }
             Text text_ui = sentence_ui.transform.Find("Text").GetComponent<Text>();
             foreach (var letter in sentences[i].text) {
+                /* ==================================== */
+                if (!voice.isPlaying) {
+                    voice.PlayOneShot(sentences[i].voice);
+                    voice.clip = sentences[i].voice;
+                }
+                /* ==================================== */
                 text_ui.text += letter;
                 if (letter == '.' && text_ui.text.Length < sentences[i].text.Trim().Length)
                     yield return new WaitForSeconds(delay);
