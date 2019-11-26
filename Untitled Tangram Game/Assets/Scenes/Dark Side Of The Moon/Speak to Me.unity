@@ -6038,7 +6038,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -11638,7 +11638,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 202be3ba2d50e864592c8df920e9799d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -21098,7 +21098,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 08013794dadca1d408cad6aaab8bd8ef, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -25422,7 +25422,7 @@ MonoBehaviour:
     voice: {fileID: 8300000, guid: 29d30391893f89f4ca89af6bc03e54e0, type: 3}
   - text: "\u041C\u044F\u0443"
     avatar: {fileID: 21300112, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
-    voice: {fileID: 8300000, guid: 29d30391893f89f4ca89af6bc03e54e0, type: 3}
+    voice: {fileID: 8300000, guid: 24c1061d93bc0b645b8b551b52ef71fb, type: 3}
   - text: "\u0425\u0430 \u0445\u0430 \u0445\u0430."
     avatar: {fileID: 21300114, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
     voice: {fileID: 8300000, guid: 5670082301a796b488af1863cec59303, type: 3}
