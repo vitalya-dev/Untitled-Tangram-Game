@@ -44,6 +44,10 @@
              GlobalVariables.last_shot = "Success";
      }
 
+     public void level_goto(string index) {
+         StartCoroutine(level_load(index, 1.0f));
+     }  
+
      private IEnumerator level_load<T>(T index, float delay) {
          if (level_loading != null && !level_loading.isDone)
              yield break;
