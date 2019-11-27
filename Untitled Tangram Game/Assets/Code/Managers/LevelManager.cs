@@ -29,7 +29,6 @@
              StartCoroutine(level_load(open_level, delay));
              GlobalVariables.attempts = 0;
          }
-         GlobalVariables.last_shot = "Fail";
      }
 
      public void next_level(float delay) {
@@ -40,8 +39,6 @@
              StartCoroutine(level_load(current_scene.buildIndex + 1, delay));
          else
              StartCoroutine(level_load(1, delay));
-         if (!current_scene.name.EndsWith("Intro") && !current_scene.name.EndsWith("Menu"))
-             GlobalVariables.last_shot = "Success";
      }
 
      public void level_goto(string index) {
