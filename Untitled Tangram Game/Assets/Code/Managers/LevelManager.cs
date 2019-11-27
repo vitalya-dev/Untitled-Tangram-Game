@@ -21,14 +21,16 @@
      }
 
      public void level_restart(float delay) {
+         Scene current_scene = SceneManager.GetActiveScene();
          if (GlobalVariables.attempts < GlobalVariables.max_attempts) {
              GlobalVariables.attempts += 1;
-             Scene current_scene = SceneManager.GetActiveScene();
              StartCoroutine(level_load(current_scene.buildIndex, delay));
          } else {
              StartCoroutine(level_load(open_level, delay));
              GlobalVariables.attempts = 0;
          }
+         if (!current_scene.name.Contains("Prologue") && !current_scene.name.Contains("Epilogue"))
+             GlobalVariables.last_shot = "Fail";
      }
 
      public void next_level(float delay) {
@@ -39,11 +41,13 @@
              StartCoroutine(level_load(current_scene.buildIndex + 1, delay));
          else
              StartCoroutine(level_load(1, delay));
+         if (!current_scene.name.Contains("Prologue") && !current_scene.name.Contains("Epilogue"))
+             GlobalVariables.last_shot = "Success";
      }
 
      public void level_goto(string index) {
          StartCoroutine(level_load(index, 1.0f));
-     }  
+     }
 
      private IEnumerator level_load<T>(T index, float delay) {
          if (level_loading != null && !level_loading.isDone)
