@@ -8,6 +8,8 @@
  public class LevelManager : MonoBehaviour {
      public UnityEvent level_start;
 
+     public bool is_gameplay_level = true;
+
      public string open_level;
 
      void Start() {
@@ -29,7 +31,7 @@
              StartCoroutine(level_load(open_level, delay));
              GlobalVariables.attempts = 0;
          }
-         if (!current_scene.name.Contains("Prologue") && !current_scene.name.Contains("Epilogue"))
+         if (is_gameplay_level)
              GlobalVariables.last_shot = "Fail";
      }
 
@@ -41,7 +43,7 @@
              StartCoroutine(level_load(current_scene.buildIndex + 1, delay));
          else
              StartCoroutine(level_load(1, delay));
-         if (!current_scene.name.Contains("Prologue") && !current_scene.name.Contains("Epilogue"))
+         if (is_gameplay_level)
              GlobalVariables.last_shot = "Success";
      }
 
