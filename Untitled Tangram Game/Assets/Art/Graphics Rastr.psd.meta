@@ -63,6 +63,7 @@ TextureImporter:
     21300116: Dasha And Masha
     21300118: Death Hand
     21300120: Cursor
+    21300122: Unknown Enemy
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1340,6 +1341,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1fcbc3f8eca0aa04780b625fb7eb7c90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unknown Enemy
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 59
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e156c6a81223c9645ac5f5076a3cdc8d
       vertices: []
       indices: 
       edges: []
