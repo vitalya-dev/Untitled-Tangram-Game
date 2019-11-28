@@ -46,7 +46,7 @@
      }
 
      public void level_goto(string index) {
-         StartCoroutine(level_load(index, 1.0f));
+         StartCoroutine(level_load(index, 0.0f));
      }
 
      private IEnumerator level_load<T>(T index, float delay) {

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: f4015b437d0ed1d45a2ffc74d60a95cd
   - enabled: 1
+    path: Assets/Scenes/Animals.unity
+    guid: 8b1256913ebfa0146bd18579e1472319
+  - enabled: 1
     path: Assets/Scenes/Dark Side Of The Moon/Dark Side Of The Moon. Prologue. PI.unity
     guid: 591423d47985e314d9c0dc4464547caf
   - enabled: 1
