@@ -25,11 +25,11 @@ public class DialogueManager : MonoBehaviour {
         for (int i = 0; i < sentences.Length; i++) {
             /* ==================================================== */
             Image sentence_ui = Instantiate(sentence_go, Vector3.zero, Quaternion.identity, ui.transform).GetComponent<Image>();
-            sentence_ui.rectTransform.localPosition = new Vector3(
-                position.x,
-                position.y - (sentence_ui.rectTransform.rect.height + 5) * i,
-                0
-            );
+            // sentence_ui.rectTransform.localPosition = new Vector3(
+            //     position.x,
+            //     position.y - (sentence_ui.rectTransform.rect.height + 5) * i,
+            //     0
+            // );
             sentence_ui_list.Add(sentence_ui);
             sentence_ui.transform.Find("Avatar").GetComponent<Image>().sprite = sentences[i].avatar;
             sentence_ui.transform.Find("Avatar").GetComponent<Image>().SetNativeSize();
