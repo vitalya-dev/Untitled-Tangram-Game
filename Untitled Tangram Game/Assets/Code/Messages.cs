@@ -10,8 +10,6 @@ public class Messages : MonoBehaviour {
 
     public float delay;
 
-    public Vector2 position;
-
     public AudioSource voice;
 
     public Sentence[] success_sentences;
@@ -29,11 +27,6 @@ public class Messages : MonoBehaviour {
 
         /* ==================================================== */
         Image sentence_ui = Instantiate(sentence_go, Vector3.zero, Quaternion.identity, ui.transform).GetComponent<Image>();
-        sentence_ui.rectTransform.localPosition = new Vector3(
-            position.x,
-            position.y,
-            0
-        );
         sentence_ui.transform.Find("Avatar").GetComponent<Image>().sprite = sentence.avatar;
         sentence_ui.transform.Find("Avatar").GetComponent<Image>().SetNativeSize();
         yield return new WaitForSeconds(delay);
