@@ -7407,8 +7407,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d049a4ff18162d24b834925a58c81fc8, type: 3}
-    m_FontSize: 24
+    m_Font: {fileID: 12800000, guid: 3650813334c880d4b9770114ceee5e22, type: 2}
+    m_FontSize: 16
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -10809,8 +10809,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d049a4ff18162d24b834925a58c81fc8, type: 3}
-    m_FontSize: 24
+    m_Font: {fileID: 12800000, guid: 3650813334c880d4b9770114ceee5e22, type: 2}
+    m_FontSize: 16
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -24530,6 +24530,7 @@ GameObject:
   - component: {fileID: 1611894131}
   - component: {fileID: 1611894129}
   - component: {fileID: 1611894130}
+  - component: {fileID: 1611894133}
   m_Layer: 5
   m_Name: Pause Menu
   m_TagString: Untagged
@@ -24619,6 +24620,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611894127}
   m_CullTransparentMesh: 0
+--- !u!114 &1611894133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611894127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 40
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
 --- !u!1 &1616444305
 GameObject:
   m_ObjectHideFlags: 0
