@@ -676,6 +676,7 @@ GameObject:
   - component: {fileID: 377724369}
   - component: {fileID: 377724368}
   - component: {fileID: 377724367}
+  - component: {fileID: 377724370}
   m_Layer: 5
   m_Name: Reaper
   m_TagString: Untagged
@@ -792,6 +793,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377724365}
   m_CullTransparentMesh: 0
+--- !u!114 &377724370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377724365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4daaad1a87108049b08cd38592d12f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animal_is_done: {fileID: 21300126, guid: da2e5eb1c42ca904cb9605fff78bc17c, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,7 +1809,7 @@ MonoBehaviour:
     m_Right: 10
     m_Top: 10
     m_Bottom: 10
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
